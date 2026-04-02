@@ -1,0 +1,187 @@
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patient Reviews | INMC Pasadena CA</title>
+<meta name="description" content="Read what patients say about their experience with Dr. Santiago and Integrative Natural Medical Clinic in Pasadena. Real results from real patients.">
+<link rel="canonical" href="https://inmc-option-1.vercel.app/testimonials.html">
+<meta property="og:title" content="Patient Reviews | Integrative Natural Medical Clinic">
+<meta property="og:description" content="Real patient testimonials about EBOO therapy, IV nutrition, and naturopathic care at INMC Pasadena.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="index, follow">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', sans-serif; }
+</style>
+</head>
+<body class="antialiased selection:bg-green-900 selection:text-white text-stone-800 bg-stone-50">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 px-6 py-4 flex justify-between items-center bg-white border-b border-stone-200">
+        <a href="index.html" class="flex items-center">
+            <img src="images/logo.webp" alt="INMC" class="h-9">
+        </a>
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium tracking-tight text-stone-700">
+            <a href="index.html" class="hover:text-[#2C3E35] transition">Home</a>
+            <a href="about.html" class="hover:text-[#2C3E35] transition">About</a>
+            <a href="index.html#services" class="hover:text-[#2C3E35] transition">Services</a>
+            <a href="testimonials.html" class="text-[#2C3E35] font-semibold">Testimonials</a>
+            <a href="blog.html" class="hover:text-[#2C3E35] transition">Blog</a>
+            <a href="index.html#contact-form" class="hover:text-[#2C3E35] transition">Contact</a>
+        </div>
+        <div class="flex items-center gap-3">
+            <a href="index.html#contact-form" class="hidden sm:inline-flex bg-[#2C3E35] text-white px-5 py-2.5 rounded-full text-xs font-medium hover:bg-stone-800 transition">
+                Contact Us
+            </a>
+            <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden w-10 h-10 flex items-center justify-center rounded-lg hover:bg-stone-100 transition">
+                <iconify-icon icon="solar:hamburger-menu-linear" width="24" class="text-stone-700"></iconify-icon>
+            </button>
+        </div>
+    </nav>
+
+    <div id="mobile-menu" class="hidden fixed top-[65px] left-0 right-0 z-40 bg-white border-b border-stone-200 shadow-lg md:hidden">
+        <div class="flex flex-col px-6 py-4 gap-1">
+            <a href="index.html" class="py-3 text-stone-700 font-medium hover:text-[#2C3E35] transition border-b border-stone-100">Home</a>
+            <a href="about.html" class="py-3 text-stone-700 font-medium hover:text-[#2C3E35] transition border-b border-stone-100">About</a>
+            <a href="index.html#services" class="py-3 text-stone-700 font-medium hover:text-[#2C3E35] transition border-b border-stone-100">Services</a>
+            <a href="testimonials.html" class="py-3 text-[#2C3E35] font-semibold border-b border-stone-100">Testimonials</a>
+            <a href="blog.html" class="py-3 text-stone-700 font-medium hover:text-[#2C3E35] transition border-b border-stone-100">Blog</a>
+            <a href="index.html#contact-form" class="mt-2 mb-1 bg-[#2C3E35] text-white px-5 py-3 rounded-full text-sm font-medium text-center hover:bg-stone-800 transition">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="pt-40 pb-20 px-6 md:px-12 max-w-[1600px] mx-auto text-center">
+        <span class="text-xs text-stone-400 uppercase tracking-widest block mb-6">/ Patient Stories</span>
+        <h1 class="text-4xl md:text-6xl tracking-tight text-stone-900 font-light mb-6">Why Patients Choose INMC</h1>
+        <p class="text-lg text-stone-500 font-light max-w-2xl mx-auto mb-8">Real stories from real patients. See why our community trusts Dr. Santiago and the INMC team.</p>
+        <div class="flex items-center justify-center gap-3">
+            <div class="flex items-center gap-1 text-[#D4E8B0]">
+                <iconify-icon icon="solar:star-bold" width="20" class="text-amber-400"></iconify-icon>
+                <iconify-icon icon="solar:star-bold" width="20" class="text-amber-400"></iconify-icon>
+                <iconify-icon icon="solar:star-bold" width="20" class="text-amber-400"></iconify-icon>
+                <iconify-icon icon="solar:star-bold" width="20" class="text-amber-400"></iconify-icon>
+                <iconify-icon icon="solar:star-half-bold" width="20" class="text-amber-400"></iconify-icon>
+            </div>
+            <span class="text-sm font-medium text-stone-700">4.5 Google Rating</span>
+            <span class="text-stone-300">|</span>
+            <span class="text-sm text-stone-500">16 Reviews</span>
+        </div>
+    </section>
+
+    <!-- Elfsight Google Reviews Widget -->
+    <section class="px-6 md:px-12 pb-24 max-w-[1600px] mx-auto">
+        <div class="bg-white rounded-3xl border border-stone-200 p-6 md:p-12 shadow-sm">
+            <script src="https://static.elfsight.com/platform/platform.js" async></script>
+            <div class="elfsight-app-bcda75e8-99ac-4823-81aa-59029b5d8bd0" data-elfsight-app-lazy></div>
+        </div>
+    </section>
+
+    <!-- Leave a Review CTA -->
+    <section class="px-6 md:px-12 pb-24 max-w-[1600px] mx-auto">
+        <div class="bg-[#2C3E35]/5 rounded-3xl p-12 md:p-16 text-center border border-[#2C3E35]/10">
+            <div class="w-14 h-14 rounded-full bg-[#2C3E35]/10 flex items-center justify-center mx-auto mb-6">
+                <iconify-icon icon="solar:chat-round-like-linear" width="28" class="text-[#2C3E35]"></iconify-icon>
+            </div>
+            <h2 class="text-2xl md:text-3xl tracking-tight text-stone-900 font-light mb-4">Your experience matters to us.</h2>
+            <p class="text-stone-500 text-base font-light mb-8 max-w-md mx-auto">We'd love to hear from you. Your review helps others find the care they deserve.</p>
+            <a href="https://www.google.com/maps/place/Integrative+Natural+Medical+Clinic" target="_blank" class="inline-flex items-center gap-3 bg-[#2C3E35] text-white pl-6 pr-3 py-3 rounded-full hover:bg-stone-800 transition">
+                <span class="text-sm font-medium">Write a Google Review</span>
+                <div class="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center">
+                    <iconify-icon icon="solar:arrow-right-up-linear" width="16"></iconify-icon>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="px-6 md:px-12 pb-24 max-w-[1600px] mx-auto text-center">
+        <div class="border-t border-stone-200 pt-20">
+            <h2 class="text-3xl md:text-4xl tracking-tight text-stone-900 font-light mb-4">Ready for a different kind of medicine?</h2>
+            <p class="text-stone-400 text-base font-light mb-8">Talk to Dr. Santiago about your health goals.</p>
+            <a href="index.html#contact-form" class="group inline-flex items-center gap-3 bg-[#2C3E35] text-white pl-6 pr-2 py-2 rounded-full hover:bg-stone-800 transition">
+                <span class="text-sm font-medium">Schedule a 15-Min Discovery Call</span>
+                <div class="w-8 h-8 bg-[#D4E8B0] rounded-full flex items-center justify-center text-[#2C3E35] group-hover:rotate-45 transition duration-300">
+                    <iconify-icon icon="solar:arrow-right-linear" width="18"></iconify-icon>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-[#2C3E35] text-white px-6 py-24 md:px-12">
+        <div class="max-w-[1600px] mx-auto grid grid-cols-1 lg:grid-cols-4 gap-12 lg:gap-24">
+
+            <div class="lg:col-span-1">
+                <h2 class="text-2xl tracking-tight mb-8 font-light">Your journey to root-cause healing starts here.</h2>
+                <a href="index.html#contact-form" class="bg-[#D4E8B0] text-[#2C3E35] pl-6 pr-2 py-2 rounded-full flex items-center gap-4 hover:bg-white transition w-max">
+                    <span class="text-sm font-medium">Schedule a 15-Min Discovery Call</span>
+                    <div class="bg-[#2C3E35] text-[#D4E8B0] rounded-full p-1.5">
+                        <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon>
+                    </div>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-2 lg:col-span-3 gap-8 text-[10px] uppercase tracking-widest text-[#D4E8B0]/60">
+                <div class="space-y-8">
+                    <div class="">
+                        <span class="block mb-4 text-[#D4E8B0]">Clinic Hours</span>
+                        <div class="text-white normal-case text-sm font-light">Monday - Friday</div>
+                        <div class="text-white normal-case text-sm font-light">By Appointment</div>
+                    </div>
+                    <div>
+                        <span class="block mb-4 text-[#D4E8B0]">Contact</span>
+                        <a href="tel:6267147400" class="text-white normal-case text-sm font-light block hover:text-[#D4E8B0] transition">(626) 714-7400</a>
+                        <a href="tel:8332693526" class="text-white normal-case text-sm font-light block hover:text-[#D4E8B0] transition">(833) 269-3526</a>
+                        <a href="mailto:info@dramaliyasantiago.com" class="text-white normal-case text-sm font-light block hover:text-[#D4E8B0] transition">info@dramaliyasantiago.com</a>
+                    </div>
+                </div>
+
+                <div class="space-y-8">
+                    <div>
+                        <span class="block mb-4 text-[#D4E8B0]">Location</span>
+                        <div class="text-white normal-case text-sm font-light mb-1">
+                            301 S Fair Oaks Ave #401
+                        </div>
+                        <div class="text-white normal-case text-sm font-light">
+                            Pasadena, CA 91105
+                        </div>
+                        <a href="https://maps.google.com/?q=301+S+Fair+Oaks+Ave+%23401+Pasadena+CA+91105" target="_blank" class="text-[#D4E8B0] normal-case text-xs mt-2 inline-block hover:text-white transition">Get Directions &rarr;</a>
+                    </div>
+
+                    <div class="pt-8">
+                        <span class="block mb-4 text-[#D4E8B0]">Connect</span>
+                        <div class="flex gap-2">
+                             <a href="https://www.instagram.com/inmc_pasadena" target="_blank" class="w-8 h-8 flex items-center justify-center rounded border border-[#D4E8B0]/20 text-white hover:bg-[#D4E8B0] hover:text-[#2C3E35] transition">
+                                 <iconify-icon icon="simple-icons:instagram"></iconify-icon>
+                             </a>
+                             <a href="https://www.facebook.com/INMClinic" target="_blank" class="w-8 h-8 flex items-center justify-center rounded border border-[#D4E8B0]/20 text-white hover:bg-[#D4E8B0] hover:text-[#2C3E35] transition">
+                                <iconify-icon icon="simple-icons:facebook"></iconify-icon>
+                             </a>
+                             <a href="https://www.yelp.com/biz/integrative-natural-medical-clinic-pasadena" target="_blank" class="w-8 h-8 flex items-center justify-center rounded border border-[#D4E8B0]/20 text-white hover:bg-[#D4E8B0] hover:text-[#2C3E35] transition">
+                                <iconify-icon icon="simple-icons:yelp"></iconify-icon>
+                             </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-[1600px] mx-auto mt-24 pt-8 border-t border-[#D4E8B0]/20 flex flex-col md:flex-row justify-between text-[10px] text-[#D4E8B0]/60 tracking-wider uppercase">
+            <div class="flex gap-6 mb-4 md:mb-0">
+                <a href="index.html#services" class="hover:text-white transition">Services</a>
+                <a href="about.html" class="hover:text-white transition">About</a>
+                <a href="testimonials.html" class="hover:text-white transition">Testimonials</a>
+            </div>
+            <div class="flex gap-6">
+                <span>&copy; 2026 Integrative Natural Medical Center</span>
+                <a href="#" class="hover:text-white transition">Privacy</a>
+            </div>
+        </div>
+    </footer>
+
+<!-- GHL Chat Widget -->
+<script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="69cc91e086ec4f5dc6900723"></script>
+</body></html>

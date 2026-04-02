@@ -1,8 +1,16 @@
 <html lang="en"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Integrative Natural Medical Center | Dr. Amaliya Santiago, ND | Pasadena</title>
-<meta name="description" content="Integrative Natural Medical Center in Pasadena, CA. Dr. Amaliya Santiago combines naturopathic and allopathic protocols for root-cause healing. EBOO, IV Therapy, Ozone, Exosomes, BHRT and more.">
+<title>Naturopathic Doctor Pasadena CA | INMC</title>
+<meta name="description" content="Dr. Amaliya Santiago, ND offers EBOO ozone therapy, IV nutrition, hormones & regenerative medicine in Pasadena, CA. Book your consultation at (626) 714-7400.">
+<link rel="canonical" href="https://inmc-option-1.vercel.app/">
+<meta property="og:title" content="Integrative Natural Medical Clinic | Pasadena, CA">
+<meta property="og:description" content="EBOO ozone therapy, IV nutrition, bioidentical hormones, and regenerative medicine with Dr. Amaliya Santiago, ND in Pasadena.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://inmc-option-1.vercel.app/">
+<meta property="og:image" content="https://inmc-option-1.vercel.app/images/consultation-2.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="index, follow">
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://unpkg.com/lucide@latest"></script>
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
@@ -16,6 +24,28 @@ body { font-family: 'Inter', sans-serif; }
 .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 .snap-x { scroll-snap-type: x mandatory; }
 .snap-center { scroll-snap-align: center; }
+
+/* Elfsight reviews widget — contain on mobile */
+.elfsight-app-bcda75e8-99ac-4823-81aa-59029b5d8bd0 {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+/* GHL chat widget — lower z-index so it doesn't cover content */
+[data-lc-chat-widget],
+.lc_text_widget_open,
+iframe[src*="leadconnectorhq"],
+iframe[src*="widgets.leadconnectorhq"] {
+  z-index: 50 !important;
+}
+@media (max-width: 768px) {
+  .elfsight-app-bcda75e8-99ac-4823-81aa-59029b5d8bd0 iframe,
+  .elfsight-app-bcda75e8-99ac-4823-81aa-59029b5d8bd0 > div {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+}
+
 .word-wrapper {
 display: inline-block;
 overflow: hidden;
@@ -28,25 +58,45 @@ display: inline-block;
 transform: translateY(110%);
 }
 </style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[{"@type":"MedicalClinic","@id":"https://inmc-option-1.vercel.app/#clinic","name":"Integrative Natural Medical Clinic","alternateName":"INMC","description":"Naturopathic medical clinic in Pasadena, CA specializing in EBOO ozone therapy, IV nutrition, bioidentical hormones, natural oncology, peptide therapy, weight loss, pain management, and regenerative medicine.","url":"https://inmc-option-1.vercel.app","telephone":"+16267147400","email":"info@dramaliyasantiago.com","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"301 S Fair Oaks Ave #401","addressLocality":"Pasadena","addressRegion":"CA","postalCode":"91105","addressCountry":"US"},"geo":{"@type":"GeoCoordinates","latitude":34.1403788,"longitude":-118.1509256},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"17:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"13:00"}],"sameAs":["https://www.google.com/maps/place/Integrative+Natural+Medical+Clinic","https://www.yelp.com/biz/integrative-natural-medical-clinic-pasadena","https://www.facebook.com/INMClinic","https://www.instagram.com/inmc_pasadena"],"medicalSpecialty":["Naturopathic Medicine","Integrative Medicine","Regenerative Medicine"]},{"@type":"Physician","@id":"https://inmc-option-1.vercel.app/#physician","name":"Dr. Amaliya Santiago","honorificPrefix":"Dr.","honorificSuffix":"ND","jobTitle":"Naturopathic Doctor","description":"Licensed Naturopathic Doctor specializing in EBOO ozone therapy, IV nutrition, bioidentical hormones, natural oncology, and regenerative medicine in Pasadena, CA.","telephone":"+16267147400","email":"info@dramaliyasantiago.com","medicalSpecialty":["Naturopathic Medicine","Integrative Medicine","Ozone Therapy","Regenerative Medicine"],"alumniOf":{"@type":"EducationalOrganization","name":"Bastyr University","description":"Doctor of Naturopathic Medicine (ND)"},"hasCredential":[{"@type":"EducationalOccupationalCredential","credentialCategory":"degree","name":"Doctor of Naturopathic Medicine (ND)"},{"@type":"EducationalOccupationalCredential","credentialCategory":"license","name":"California Naturopathic Doctor License"}],"worksFor":{"@id":"https://inmc-option-1.vercel.app/#clinic"}},{"@type":"WebSite","url":"https://inmc-option-1.vercel.app","name":"Integrative Natural Medical Clinic","publisher":{"@id":"https://inmc-option-1.vercel.app/#clinic"}}]}
+</script>
 </head>
 <body class="antialiased selection:bg-green-900 selection:text-white text-stone-800 bg-stone-50">
 
     <!-- Navbar -->
-    <nav class="fixed top-0 w-full z-50 px-6 py-6 flex justify-between items-center text-white mix-blend-difference">
-        <div class="flex items-center gap-2">
-            <iconify-icon icon="solar:leaf-linear" width="28" height="28"></iconify-icon>
-            <span class="text-xl font-medium tracking-tighter uppercase">INMC</span>
-        </div>
-        <div class="hidden md:flex items-center gap-8 text-sm font-medium tracking-tight bg-stone-900/10 backdrop-blur-md px-6 py-3 rounded-full border border-white/10">
-            <a href="#services" class="hover:opacity-70 transition">Services</a>
-            <a href="#about" class="hover:opacity-70 transition">About</a>
-            <a href="#testimonials" class="hover:opacity-70 transition">Testimonials</a>
-            <a href="#contact" class="hover:opacity-70 transition">Contact</a>
-        </div>
-        <a href="tel:6267147400" class="bg-white text-stone-950 px-5 py-2.5 rounded-full text-xs font-medium hover:bg-stone-200 transition">
-            Book Consultation
+    <nav class="fixed top-0 w-full z-50 px-6 py-4 flex justify-between items-center bg-white border-b border-stone-200">
+        <a href="index.html" class="flex items-center">
+            <img src="images/logo.webp" alt="INMC" class="h-9">
         </a>
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium tracking-tight text-stone-700">
+            <a href="#services" class="hover:text-[#2C3E35] transition">Services</a>
+            <a href="about.html" class="hover:text-[#2C3E35] transition">About</a>
+            <a href="testimonials.html" class="hover:text-[#2C3E35] transition">Testimonials</a>
+            <a href="blog.html" class="hover:text-[#2C3E35] transition">Blog</a>
+            <a href="#contact-form" class="hover:text-[#2C3E35] transition">Contact</a>
+        </div>
+        <div class="flex items-center gap-3">
+            <a href="#contact-form" class="hidden sm:inline-flex bg-[#2C3E35] text-white px-5 py-2.5 rounded-full text-xs font-medium hover:bg-stone-800 transition">
+                Contact Us
+            </a>
+            <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden w-10 h-10 flex items-center justify-center rounded-lg hover:bg-stone-100 transition">
+                <iconify-icon icon="solar:hamburger-menu-linear" width="24" class="text-stone-700"></iconify-icon>
+            </button>
+        </div>
     </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden fixed top-[65px] left-0 right-0 z-40 bg-white border-b border-stone-200 shadow-lg md:hidden">
+        <div class="flex flex-col px-6 py-4 gap-1">
+            <a href="#services" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="py-3 text-stone-700 font-medium hover:text-[#2C3E35] transition border-b border-stone-100">Services</a>
+            <a href="about.html" class="py-3 text-stone-700 font-medium hover:text-[#2C3E35] transition border-b border-stone-100">About</a>
+            <a href="testimonials.html" class="py-3 text-stone-700 font-medium hover:text-[#2C3E35] transition border-b border-stone-100">Testimonials</a>
+            <a href="blog.html" class="py-3 text-stone-700 font-medium hover:text-[#2C3E35] transition border-b border-stone-100">Blog</a>
+            <a href="#contact-form" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="py-3 text-stone-700 font-medium hover:text-[#2C3E35] transition border-b border-stone-100">Contact</a>
+            <a href="#contact-form" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="mt-2 mb-1 bg-[#2C3E35] text-white px-5 py-3 rounded-full text-sm font-medium text-center hover:bg-stone-800 transition">Contact Us</a>
+        </div>
+    </div>
 
     <!-- Hero Section -->
     <header id="hero-section" class="relative w-full h-screen min-h-[800px] overflow-hidden">
@@ -63,14 +113,14 @@ transform: translateY(110%);
                         <span class="text-xs font-medium tracking-wide uppercase">Pasadena, California</span>
                     </div>
                     <!-- Animated Reveal Text -->
-                    <h1 class="reveal-text leading-[1.05] md:text-7xl text-5xl tracking-tighter mb-6 font-light">Where your body remembers how to heal.</h1>
+                    <h1 class="reveal-text leading-[1.05] md:text-7xl text-5xl tracking-tighter mb-6 font-light">Precision medicine for patients who've outgrown conventional answers.</h1>
                 </div>
                 <div class="flex flex-col items-start lg:items-end justify-end gap-8">
                     <p class="text-lg md:text-xl font-light leading-relaxed max-w-md text-left lg:text-right opacity-90">
-                        Integrative medicine that combines naturopathic and allopathic protocols to address the root cause, not just the symptoms.
+                        When standard medicine gives you a prescription, we give you a protocol — built from your labs, your history, your biology.
                     </p>
-                    <a href="tel:6267147400" class="group flex items-center gap-3 bg-white text-stone-950 pl-6 pr-2 py-2 rounded-full transition hover:bg-stone-200">
-                        <span class="text-sm font-medium">Book Free Consultation</span>
+                    <a href="#contact-form" class="group flex items-center gap-3 bg-white text-stone-950 pl-6 pr-2 py-2 rounded-full transition hover:bg-stone-200">
+                        <span class="text-sm font-medium">Schedule a 15-Min Discovery Call</span>
                         <div class="w-8 h-8 bg-stone-950 rounded-full flex items-center justify-center text-white group-hover:rotate-45 transition duration-300">
                             <iconify-icon icon="solar:arrow-right-linear" width="18"></iconify-icon>
                         </div>
@@ -88,17 +138,17 @@ transform: translateY(110%);
     <!-- Section 01: About / Philosophy -->
     <section id="about" class="px-6 py-24 md:px-12 max-w-[1600px] mx-auto">
         <div class="flex justify-between items-baseline mb-12 border-b border-stone-200 pb-4">
-            <span class="text-xs text-stone-400 uppercase tracking-widest">/ 01 Our Philosophy</span>
+            <span class="text-xs text-stone-400 uppercase tracking-widest">/ 01 Our Approach</span>
             <span class="text-xs text-stone-400 font-mono">[ 01 ]</span>
         </div>
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
             <!-- Left Image Card -->
-            <div class="lg:col-span-4 relative group overflow-hidden rounded-2xl h-[500px]">
-                <img src="images/doctor.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-105" alt="Dr. Amaliya Santiago">
-                <div class="absolute inset-0 bg-gradient-to-t from-stone-900/80 to-transparent flex flex-col justify-end p-8">
-                    <p class="text-white text-lg font-light leading-snug">"The most comprehensive approach to wellness I've experienced. She actually listens."</p>
-                    <div class="flex items-center gap-1 text-[#D4E8B0] mt-4">
+            <div class="lg:col-span-4 relative group overflow-hidden rounded-2xl h-[350px] md:h-[500px]">
+                <img src="images/doctor.jpg" class="w-full h-full object-cover object-top transition duration-700 group-hover:scale-105" alt="Dr. Amaliya Santiago">
+                <div class="absolute inset-0 bg-gradient-to-t from-stone-900/80 to-transparent flex flex-col justify-end p-6 md:p-8">
+                    <p class="text-white text-base md:text-lg font-light leading-snug">"The most comprehensive approach to wellness I've experienced. She actually listens."</p>
+                    <div class="flex items-center gap-1 text-[#D4E8B0] mt-3">
                         <iconify-icon icon="solar:star-bold" width="14"></iconify-icon>
                         <iconify-icon icon="solar:star-bold" width="14"></iconify-icon>
                         <iconify-icon icon="solar:star-bold" width="14"></iconify-icon>
@@ -113,20 +163,8 @@ transform: translateY(110%);
             <div class="lg:col-span-4 flex flex-col justify-between h-full gap-8">
                 <div class="">
                     <!-- Animated Reveal Text -->
-                    <h2 class="reveal-text text-3xl tracking-tight text-stone-900 leading-tight mb-8 font-light">"Your body has an innate ability to heal. Our job is to remove the obstacles and provide the tools it needs."</h2>
-                    <p class="text-stone-500 text-base leading-relaxed">Motivated by her children's autoimmune conditions, Dr. Santiago combines the best of both conventional and naturopathic medicine to find root-cause solutions that last.</p>
-                </div>
-                <div class="bg-white p-6 rounded-2xl border border-stone-100 shadow-sm flex-1 flex flex-col justify-end relative overflow-hidden group">
-                     <img src="images/consultation.jpg" class="absolute inset-0 w-full h-full object-cover opacity-90 transition duration-700 group-hover:scale-105" alt="Consultation at INMC">
-                </div>
-                <div class="flex items-center justify-between">
-                    <p class="text-stone-500 text-sm max-w-[200px]">5.0 Stars on Google</p>
-                    <a href="#services" class="bg-stone-900 text-white pl-5 pr-2 py-2 rounded-full flex items-center gap-2 hover:bg-stone-800 transition">
-                        <span class="text-xs font-medium">View Our Services</span>
-                        <div class="bg-white text-black rounded-full p-1">
-                            <iconify-icon icon="solar:arrow-right-linear" width="12"></iconify-icon>
-                        </div>
-                    </a>
+                    <h2 class="reveal-text text-3xl tracking-tight text-stone-900 leading-tight mb-8 font-light">"Most doctors treat what's wrong. We rebuild what's right."</h2>
+                    <p class="text-stone-500 text-base leading-relaxed">Dr. Santiago's own children faced autoimmune conditions no conventional doctor could solve. That search led to INMC — where every protocol is built to address why you're sick, not just what hurts.</p>
                 </div>
             </div>
 
@@ -144,27 +182,27 @@ transform: translateY(110%);
 
                 <div>
                     <h3 class="text-6xl tracking-tighter text-white mb-2 font-light">10+</h3>
-                    <p class="text-[#D4E8B0] text-sm opacity-80 mb-8">Years of integrative medicine experience. Bastyr University graduate.</p>
+                    <p class="text-[#D4E8B0] text-sm opacity-80 mb-8">A decade of results. Bastyr-trained. German-certified.</p>
 
                     <div class="space-y-4">
                         <div class="flex items-center gap-3">
                             <div class="w-full bg-white/10 h-10 rounded-full overflow-hidden flex items-center px-4 relative">
-                                <span class="relative z-10 text-xs font-medium text-white">Services Offered</span>
+                                <span class="relative z-10 text-xs font-medium text-white">Treatment Protocols</span>
                                 <div class="absolute left-0 top-0 h-full bg-[#D4E8B0]/20 w-[100%]"></div>
                             </div>
-                            <span class="text-sm font-medium text-white">11</span>
+                            <span class="text-sm font-medium text-white">14</span>
                         </div>
                         <div class="flex items-center gap-3">
                             <div class="w-full bg-white/10 h-10 rounded-full overflow-hidden flex items-center px-4 relative">
-                                <span class="relative z-10 text-xs font-medium text-white">Google Rating</span>
+                                <span class="relative z-10 text-xs font-medium text-white">Conditions Treated</span>
                                 <div class="absolute left-0 top-0 h-full bg-[#D4E8B0]/20 w-[100%]"></div>
                             </div>
-                            <span class="text-sm font-medium text-white">5.0</span>
+                            <span class="text-sm font-medium text-white">50+</span>
                         </div>
                         <div class="flex items-center gap-3">
                             <div class="w-full bg-white/10 h-10 rounded-full overflow-hidden flex items-center px-4 relative">
                                 <span class="relative z-10 text-xs font-medium text-white">IV Formulations</span>
-                                <div class="absolute left-0 top-0 h-full bg-[#D4E8B0]/20 w-[80%]"></div>
+                                <div class="absolute left-0 top-0 h-full bg-[#D4E8B0]/20 w-[100%]"></div>
                             </div>
                             <span class="text-sm font-medium text-white">16+</span>
                         </div>
@@ -181,8 +219,8 @@ transform: translateY(110%);
                 <div class="flex items-center gap-3 text-stone-600">
                     <iconify-icon icon="solar:diploma-verified-linear" width="32" height="32" class="text-[#2C3E35]"></iconify-icon>
                     <div>
-                        <div class="text-sm font-medium text-stone-900">Bastyr University Graduate</div>
-                        <div class="text-xs text-stone-400">Naturopathic Doctorate, 2015</div>
+                        <div class="text-sm font-medium text-stone-900">Bastyr University</div>
+                        <div class="text-xs text-stone-400">Naturopathic Doctorate</div>
                     </div>
                 </div>
                 <div class="flex items-center gap-3 text-stone-600">
@@ -202,15 +240,15 @@ transform: translateY(110%);
                 <div class="flex items-center gap-3 text-stone-600">
                     <iconify-icon icon="solar:star-bold" width="32" height="32" class="text-[#2C3E35]"></iconify-icon>
                     <div>
-                        <div class="text-sm font-medium text-stone-900">5.0 Google Rating</div>
-                        <div class="text-xs text-stone-400">Verified Patient Reviews</div>
+                        <div class="text-sm font-medium text-stone-900">Verified Reviews</div>
+                        <div class="text-xs text-stone-400">Google Patient Reviews</div>
                     </div>
                 </div>
                 <div class="flex items-center gap-3 text-stone-600">
                     <iconify-icon icon="solar:calendar-linear" width="32" height="32" class="text-[#2C3E35]"></iconify-icon>
                     <div>
-                        <div class="text-sm font-medium text-stone-900">Free Consultations</div>
-                        <div class="text-xs text-stone-400">Call (626) 714-7400</div>
+                        <div class="text-sm font-medium text-stone-900">By Appointment Only</div>
+                        <div class="text-xs text-stone-400">(626) 714-7400</div>
                     </div>
                 </div>
             </div>
@@ -235,7 +273,7 @@ transform: translateY(110%);
                 <div class="">
                     <div class="flex items-start justify-between gap-6">
                         <h2 class="text-4xl lg:text-5xl tracking-tight text-white mb-8 max-w-md font-light">
-                            Integrative medicine for the whole person.
+                            Your protocol. Your biology. Your results.
                         </h2>
                         <div class="border border-[#D4E8B0]/20 rounded-full p-2 hidden lg:block shrink-0">
                             <iconify-icon icon="solar:dna-linear" width="24" height="24" class="text-[#D4E8B0]"></iconify-icon>
@@ -248,19 +286,28 @@ transform: translateY(110%);
                         <span class="px-4 py-2 rounded-full border border-[#D4E8B0]/20 text-xs font-medium text-[#D4E8B0] hover:bg-[#D4E8B0] hover:text-[#2C3E35] transition cursor-pointer">Hormones & Anti-Aging</span>
                         <span class="px-4 py-2 rounded-full border border-[#D4E8B0]/20 text-xs font-medium text-[#D4E8B0] hover:bg-[#D4E8B0] hover:text-[#2C3E35] transition cursor-pointer">Exosomes & PRP</span>
                         <span class="px-4 py-2 rounded-full border border-[#D4E8B0]/20 text-xs font-medium text-[#D4E8B0] hover:bg-[#D4E8B0] hover:text-[#2C3E35] transition cursor-pointer">Natural Oncology</span>
+                        <span class="px-4 py-2 rounded-full border border-[#D4E8B0]/20 text-xs font-medium text-[#D4E8B0] hover:bg-[#D4E8B0] hover:text-[#2C3E35] transition cursor-pointer">Hyperthermia Ozone Sauna</span>
+                        <span class="px-4 py-2 rounded-full border border-[#D4E8B0]/20 text-xs font-medium text-[#D4E8B0] hover:bg-[#D4E8B0] hover:text-[#2C3E35] transition cursor-pointer">Ozone High Dose</span>
+                        <span class="px-4 py-2 rounded-full border border-[#D4E8B0]/20 text-xs font-medium text-[#D4E8B0] hover:bg-[#D4E8B0] hover:text-[#2C3E35] transition cursor-pointer">Plexr Plasma</span>
+                        <span class="px-4 py-2 rounded-full border border-[#D4E8B0]/20 text-xs font-medium text-[#D4E8B0] hover:bg-[#D4E8B0] hover:text-[#2C3E35] transition cursor-pointer">Prolozone Therapy</span>
+                        <span class="px-4 py-2 rounded-full border border-[#D4E8B0]/20 text-xs font-medium text-[#D4E8B0] hover:bg-[#D4E8B0] hover:text-[#2C3E35] transition cursor-pointer">PEMF Therapy</span>
+                        <span class="px-4 py-2 rounded-full border border-[#D4E8B0]/20 text-xs font-medium text-[#D4E8B0] hover:bg-[#D4E8B0] hover:text-[#2C3E35] transition cursor-pointer">RoXiva Light Therapy</span>
+                        <span class="px-4 py-2 rounded-full border border-[#D4E8B0]/20 text-xs font-medium text-[#D4E8B0] hover:bg-[#D4E8B0] hover:text-[#2C3E35] transition cursor-pointer">Peptide Therapy</span>
+                        <span class="px-4 py-2 rounded-full border border-[#D4E8B0]/20 text-xs font-medium text-[#D4E8B0] hover:bg-[#D4E8B0] hover:text-[#2C3E35] transition cursor-pointer">Weight Loss</span>
+                        <span class="px-4 py-2 rounded-full border border-[#D4E8B0]/20 text-xs font-medium text-[#D4E8B0] hover:bg-[#D4E8B0] hover:text-[#2C3E35] transition cursor-pointer">Pain Management</span>
                     </div>
                 </div>
 
-                <div class="bg-[#23322b] border border-white/5 rounded-2xl p-6 flex gap-6 items-center">
-                    <img src="images/doctor.jpg" class="w-20 h-20 rounded-xl object-cover grayscale opacity-80" alt="Dr. Amaliya Santiago">
-                    <div class="">
+                <div class="bg-[#23322b] border border-white/5 rounded-2xl p-6 flex flex-col sm:flex-row gap-5 items-start sm:items-center">
+                    <img src="images/doctor.jpg" class="w-full sm:w-20 h-48 sm:h-20 rounded-xl object-cover object-top grayscale opacity-80 shrink-0" alt="Dr. Amaliya Santiago">
+                    <div>
                         <h4 class="text-lg font-medium text-white">Dr. Amaliya Santiago, ND</h4>
                         <div class="flex items-center gap-2 mb-2">
                             <span class="text-xs text-white/50">Naturopathic Doctor & Founder</span>
                         </div>
                         <p class="text-sm text-white/70 max-w-xs mb-4">"We combine the best of both worlds to find solutions that address the root cause of illness."</p>
-                        <a href="tel:6267147400" class="bg-[#D4E8B0] text-[#2C3E35] pl-4 pr-1 py-1.5 rounded-full flex items-center gap-2 text-xs font-medium w-max hover:bg-white transition">
-                            Free Consultation
+                        <a href="#contact-form" class="bg-[#D4E8B0] text-[#2C3E35] pl-4 pr-1 py-1.5 rounded-full inline-flex items-center gap-2 text-xs font-medium hover:bg-white transition">
+                            Contact Us
                             <div class="bg-[#2C3E35] text-[#D4E8B0] rounded-full p-1">
                                 <iconify-icon icon="solar:arrow-right-linear" width="12"></iconify-icon>
                             </div>
@@ -271,318 +318,79 @@ transform: translateY(110%);
 
             <!-- Right Side (Image + Card) -->
             <div class="relative rounded-3xl overflow-hidden h-[500px] lg:h-[600px] group order-1 lg:order-2">
-                <img src="images/treatment.jpg" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 opacity-90" alt="IV Therapy Treatment Room at INMC">
+                <img src="images/consultation-2.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-700 opacity-90" alt="IV Therapy Treatment Room at INMC">
 
-                <!-- Floating Card -->
-                <div class="absolute top-6 right-6 bg-[#1A2621]/90 backdrop-blur-md p-5 rounded-2xl shadow-xl w-72 border border-white/10">
-                    <div class="flex justify-between items-end mb-4 border-b border-white/10 pb-2">
-                        <div class="">
-                            <span class="text-[10px] uppercase text-[#D4E8B0]/60 font-bold tracking-wider">IV Formulations</span>
-                            <div class="text-2xl tracking-tight font-light text-white">16+ <span class="text-xs text-white/40 font-normal">types</span></div>
-                        </div>
-                        <div class="text-right">
-                             <span class="text-[10px] uppercase text-[#D4E8B0]/60 font-bold tracking-wider">Experience</span>
-                             <div class="text-2xl tracking-tight font-light text-white">10+ <span class="text-xs text-white/40 font-normal">yrs</span></div>
-                        </div>
-                    </div>
-                    <div class="text-xs text-white/60 mt-2">Myers' Cocktail, HDIVC, NAD+, Glutathione, Chelation & more</div>
-                </div>
             </div>
         </div>
     </div>
 </section>
 
-    <!-- Section 03: Our Services -->
-    <section id="services" class="md:px-12 bg-stone-50 max-w-[1600px] border-stone-100 border rounded-[40px] mt-12 mr-auto mb-12 ml-auto pt-24 pr-6 pb-24 pl-6">
-        <div class="flex justify-between items-baseline mb-16">
-            <div class="">
-                 <span class="text-xs text-stone-400 uppercase tracking-widest block mb-4">/ 03 Services</span>
-                 <h2 class="text-4xl md:text-5xl tracking-tight text-stone-900 max-w-lg font-light">
-                    11 specialized treatments under one roof.
-                 </h2>
-            </div>
-            <div class="hidden lg:block">
-                <p class="text-sm text-stone-500 max-w-xs text-right">Evidence-based integrative protocols designed for lasting results.</p>
-                <span class="text-xs text-stone-400 font-mono block text-right mt-2">[ 03 ]</span>
-            </div>
+    <!-- Promo Video -->
+    <section class="px-6 py-24 md:px-12 max-w-[1000px] mx-auto">
+        <div class="text-center mb-10">
+            <span class="text-xs text-stone-400 uppercase tracking-widest block mb-4">See INMC in Action</span>
+            <h2 class="text-3xl md:text-4xl tracking-tight text-stone-900 font-light">Inside the clinic</h2>
         </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-
-            <!-- Left Visual -->
-            <div class="relative rounded-3xl overflow-hidden h-[700px]">
-                <img src="images/wellness.jpg" class="w-full h-full object-cover" alt="Natural Medicine at INMC">
-
-                <!-- Info Widget -->
-                <div class="absolute bottom-8 left-8 right-8 bg-white p-6 rounded-2xl shadow-xl border border-stone-100">
-                    <div class="flex justify-between items-start mb-4">
-                        <div class="">
-                             <p class="text-xs text-stone-500 uppercase font-medium">Exosomes & PRP</p>
-                             <h3 class="text-3xl tracking-tight text-stone-900 font-light">$3,800<span class="text-sm text-stone-400 font-light">+</span></h3>
-                        </div>
-                        <div class="bg-stone-900 text-white text-[10px] uppercase font-bold tracking-wide px-3 py-1.5 rounded">
-                            Regenerative
-                        </div>
-                    </div>
-                    <div class="w-full h-1 bg-stone-100 rounded-full mb-4 overflow-hidden">
-                        <div class="w-[85%] bg-[#2C3E35] h-full"></div>
-                    </div>
-                    <div class="flex justify-between text-xs text-stone-500 font-medium">
-                        <div class="flex items-center gap-1">
-                            <iconify-icon icon="solar:check-circle-linear" class="text-[#2C3E35]"></iconify-icon>
-                            <span>Joint Repair</span>
-                        </div>
-                        <div class="flex items-center gap-1">
-                            <iconify-icon icon="solar:check-circle-linear" class="text-[#2C3E35]"></iconify-icon>
-                            <span>Tissue Healing</span>
-                        </div>
-                        <div class="flex items-center gap-1">
-                            <iconify-icon icon="solar:check-circle-linear" class="text-[#2C3E35]"></iconify-icon>
-                            <span>Anti-Aging</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Right Accordion List -->
-            <div class="flex flex-col gap-2">
-                <!-- Item 1 (Active) -->
-                <div class="group p-8 rounded-2xl bg-white shadow-sm border border-stone-100 transition cursor-pointer">
-                    <div class="flex items-start gap-6">
-                        <div class="w-8 h-8 rounded-full border border-stone-300 flex items-center justify-center text-xs font-mono text-stone-500">01</div>
-                        <div class="flex-1">
-                            <h3 class="text-2xl tracking-tight text-stone-900 mb-3 font-light">EBOO Ozone Therapy</h3>
-                            <p class="text-stone-500 text-base font-light leading-relaxed mb-6">
-                                Extracorporeal blood oxygenation and ozonation. A 45-minute to 1-hour session that filters and oxygenates your blood for deep detoxification and immune support.
-                            </p>
-                            <div class="flex items-center justify-between">
-                                <a href="tel:6267147400" class="bg-[#2C3E35] text-white pl-5 pr-2 py-2 rounded-full flex items-center gap-2 hover:bg-stone-800 transition">
-                                    <span class="text-xs font-medium">Book This Treatment</span>
-                                    <div class="bg-white/20 text-white rounded-full p-1">
-                                        <iconify-icon icon="solar:arrow-right-linear" width="12"></iconify-icon>
-                                    </div>
-                                </a>
-                                <div class="flex items-center gap-1 text-[#2C3E35] text-sm font-medium">
-                                    <iconify-icon icon="solar:clock-circle-linear"></iconify-icon>
-                                    <span class="text-stone-600 text-xs">45-60 min</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item 2 -->
-                <div class="group p-8 rounded-2xl hover:bg-white border border-transparent hover:border-stone-100 transition cursor-pointer">
-                    <div class="flex items-center gap-6 opacity-60 group-hover:opacity-100 transition">
-                        <div class="w-8 h-8 rounded-full border border-stone-200 flex items-center justify-center text-xs font-mono text-stone-400 group-hover:border-stone-400 group-hover:text-stone-600">02</div>
-                        <div class="">
-                            <h3 class="text-xl font-medium tracking-tight text-stone-900">IV Nutrition Therapy</h3>
-                            <p class="text-sm text-stone-400 mt-1">Myers' Cocktail, HDIVC, NAD+, glutathione, chelation. 16+ formulations.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item 3 -->
-                <div class="group p-8 rounded-2xl hover:bg-white border border-transparent hover:border-stone-100 transition cursor-pointer">
-                    <div class="flex items-center gap-6 opacity-60 group-hover:opacity-100 transition">
-                        <div class="w-8 h-8 rounded-full border border-stone-200 flex items-center justify-center text-xs font-mono text-stone-400 group-hover:border-stone-400 group-hover:text-stone-600">03</div>
-                        <div>
-                            <h3 class="text-xl font-medium tracking-tight text-stone-900">Hormones & Anti-Aging</h3>
-                            <p class="text-sm text-stone-400 mt-1">BHRT and bioidentical hormone optimization for vitality.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item 4 -->
-                <div class="group p-8 rounded-2xl hover:bg-white border border-transparent hover:border-stone-100 transition cursor-pointer">
-                    <div class="flex items-center gap-6 opacity-60 group-hover:opacity-100 transition">
-                        <div class="w-8 h-8 rounded-full border border-stone-200 flex items-center justify-center text-xs font-mono text-stone-400 group-hover:border-stone-400 group-hover:text-stone-600">04</div>
-                        <div>
-                            <h3 class="text-xl font-medium tracking-tight text-stone-900">Exosomes & PRP</h3>
-                            <p class="text-sm text-stone-400 mt-1">Regenerative medicine starting at $3,800+.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item 5 -->
-                <div class="group p-8 rounded-2xl hover:bg-white border border-transparent hover:border-stone-100 transition cursor-pointer">
-                    <div class="flex items-center gap-6 opacity-60 group-hover:opacity-100 transition">
-                        <div class="w-8 h-8 rounded-full border border-stone-200 flex items-center justify-center text-xs font-mono text-stone-400 group-hover:border-stone-400 group-hover:text-stone-600">05</div>
-                        <div>
-                            <h3 class="text-xl font-medium tracking-tight text-stone-900">Natural Oncology</h3>
-                            <p class="text-sm text-stone-400 mt-1">Complementary cancer care alongside conventional treatment.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item 6 -->
-                <div class="group p-8 rounded-2xl hover:bg-white border border-transparent hover:border-stone-100 transition cursor-pointer">
-                    <div class="flex items-center gap-6 opacity-60 group-hover:opacity-100 transition">
-                        <div class="w-8 h-8 rounded-full border border-stone-200 flex items-center justify-center text-xs font-mono text-stone-400 group-hover:border-stone-400 group-hover:text-stone-600">06</div>
-                        <div>
-                            <h3 class="text-xl font-medium tracking-tight text-stone-900">Hyperthermia Ozone Sauna</h3>
-                            <p class="text-sm text-stone-400 mt-1">Whole-body detoxification and immune activation.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item 7 -->
-                <div class="group p-8 rounded-2xl hover:bg-white border border-transparent hover:border-stone-100 transition cursor-pointer">
-                    <div class="flex items-center gap-6 opacity-60 group-hover:opacity-100 transition">
-                        <div class="w-8 h-8 rounded-full border border-stone-200 flex items-center justify-center text-xs font-mono text-stone-400 group-hover:border-stone-400 group-hover:text-stone-600">07</div>
-                        <div>
-                            <h3 class="text-xl font-medium tracking-tight text-stone-900">Ozone High Dose Therapy</h3>
-                            <p class="text-sm text-stone-400 mt-1">Systemic ozone protocols for deep healing.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item 8 -->
-                <div class="group p-8 rounded-2xl hover:bg-white border border-transparent hover:border-stone-100 transition cursor-pointer">
-                    <div class="flex items-center gap-6 opacity-60 group-hover:opacity-100 transition">
-                        <div class="w-8 h-8 rounded-full border border-stone-200 flex items-center justify-center text-xs font-mono text-stone-400 group-hover:border-stone-400 group-hover:text-stone-600">08</div>
-                        <div>
-                            <h3 class="text-xl font-medium tracking-tight text-stone-900">Plexr Plasma</h3>
-                            <p class="text-sm text-stone-400 mt-1">Non-surgical tissue tightening and rejuvenation.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item 9 -->
-                <div class="group p-8 rounded-2xl hover:bg-white border border-transparent hover:border-stone-100 transition cursor-pointer">
-                    <div class="flex items-center gap-6 opacity-60 group-hover:opacity-100 transition">
-                        <div class="w-8 h-8 rounded-full border border-stone-200 flex items-center justify-center text-xs font-mono text-stone-400 group-hover:border-stone-400 group-hover:text-stone-600">09</div>
-                        <div>
-                            <h3 class="text-xl font-medium tracking-tight text-stone-900">Prolozone Therapy</h3>
-                            <p class="text-sm text-stone-400 mt-1">Joint and pain regeneration with ozone injection.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item 10 -->
-                <div class="group p-8 rounded-2xl hover:bg-white border border-transparent hover:border-stone-100 transition cursor-pointer">
-                    <div class="flex items-center gap-6 opacity-60 group-hover:opacity-100 transition">
-                        <div class="w-8 h-8 rounded-full border border-stone-200 flex items-center justify-center text-xs font-mono text-stone-400 group-hover:border-stone-400 group-hover:text-stone-600">10</div>
-                        <div>
-                            <h3 class="text-xl font-medium tracking-tight text-stone-900">PEMF Therapy</h3>
-                            <p class="text-sm text-stone-400 mt-1">Pulsed electromagnetic field therapy for cellular repair.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item 11 -->
-                <div class="group p-8 rounded-2xl hover:bg-white border border-transparent hover:border-stone-100 transition cursor-pointer">
-                    <div class="flex items-center gap-6 opacity-60 group-hover:opacity-100 transition">
-                        <div class="w-8 h-8 rounded-full border border-stone-200 flex items-center justify-center text-xs font-mono text-stone-400 group-hover:border-stone-400 group-hover:text-stone-600">11</div>
-                        <div>
-                            <h3 class="text-xl font-medium tracking-tight text-stone-900">RoXiva Light Therapy</h3>
-                            <p class="text-sm text-stone-400 mt-1">Audio-visual entrainment for brainwave optimization.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="rounded-2xl overflow-hidden shadow-xl border border-stone-200">
+            <script src="https://fast.wistia.com/player.js" async></script>
+            <script src="https://fast.wistia.com/embed/rubn292row.js" async type="module"></script>
+            <style>wistia-player[media-id='rubn292row']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/rubn292row/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }</style>
+            <wistia-player media-id="rubn292row" aspect="1.7777777777777777"></wistia-player>
         </div>
     </section>
 
-    <!-- Section 04: Testimonials -->
+    <!-- Section 03: Our Services -->
+    <section id="services" class="px-6 py-24 md:px-12 max-w-[1600px] mx-auto">
+        <div class="flex justify-between items-baseline mb-16 border-b border-stone-200 pb-4">
+            <div>
+                 <span class="text-xs text-stone-400 uppercase tracking-widest block mb-4">/ 03 Services</span>
+                 <h2 class="text-4xl md:text-5xl tracking-tight text-stone-900 max-w-lg font-light">
+                    One clinic. Fourteen protocols. Zero guesswork.
+                 </h2>
+            </div>
+            <span class="text-xs text-stone-400 font-mono hidden lg:block">[ 03 ]</span>
+        </div>
+
+        <!-- Service Detail Panel (hidden by default) -->
+        <div id="service-detail" class="hidden mb-12 bg-[#2C3E35] rounded-3xl overflow-hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-2">
+                <div class="h-64 lg:h-auto">
+                    <img id="service-detail-img" src="" class="w-full h-full object-cover" alt="">
+                </div>
+                <div class="p-8 lg:p-12 text-white flex flex-col justify-center">
+                    <span id="service-detail-num" class="text-xs text-[#D4E8B0]/60 uppercase tracking-widest mb-3"></span>
+                    <h3 id="service-detail-title" class="text-3xl lg:text-4xl tracking-tight font-light mb-4"></h3>
+                    <p id="service-detail-desc" class="text-white/70 text-base leading-relaxed mb-8"></p>
+                    <div class="flex items-center gap-4">
+                        <a href="#contact-form" class="bg-[#D4E8B0] text-[#2C3E35] pl-5 pr-2 py-2.5 rounded-full inline-flex items-center gap-2 text-sm font-medium hover:bg-white transition" onclick="document.getElementById('service-detail').classList.add('hidden')">
+                            Book This Treatment
+                            <div class="bg-[#2C3E35] text-[#D4E8B0] rounded-full p-1">
+                                <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon>
+                            </div>
+                        </a>
+                        <button onclick="document.getElementById('service-detail').classList.add('hidden')" class="text-white/50 hover:text-white text-sm transition">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Grid -->
+        <div id="services-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        </div>
+    </section>
+
+    <!-- Section 04: Google Reviews -->
     <section id="testimonials" class="px-6 py-24 md:px-12 max-w-[1600px] mx-auto">
-        <div class="bg-[#2C3E35] rounded-[40px] p-8 md:p-16 text-white relative overflow-hidden">
-            <div class="flex justify-between items-start mb-12 relative z-10">
-                <div class="">
-                    <span class="text-xs text-white/50 uppercase tracking-widest block mb-4">/ 04 Testimonials</span>
-                    <h2 class="text-3xl md:text-5xl tracking-tight max-w-lg leading-tight font-light">
-                        What our patients say.
-                    </h2>
-                </div>
-                <div class="flex gap-2">
-                    <button id="prevBtn" class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-[#2C3E35] transition duration-300">
-                        <iconify-icon icon="solar:arrow-left-linear" width="20"></iconify-icon>
-                    </button>
-                    <button id="nextBtn" class="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center hover:bg-white hover:text-[#2C3E35] transition duration-300">
-                        <iconify-icon icon="solar:arrow-right-linear" width="20"></iconify-icon>
-                    </button>
-                </div>
-            </div>
-
-            <!-- Slider Container -->
-            <div id="testimonial-container" class="flex overflow-x-auto gap-6 pb-4 snap-x hide-scrollbar scroll-smooth">
-
-                <!-- Slide 1 -->
-                <div class="min-w-[100%] md:min-w-[80%] lg:min-w-[70%] snap-center">
-                    <div class="bg-[#23322b] rounded-3xl p-8 lg:p-12 overflow-hidden">
-                        <div class="flex flex-col justify-center">
-                             <iconify-icon icon="solar:quote-up-bold" width="40" height="40" class="mb-6 opacity-30 text-[#D4E8B0]"></iconify-icon>
-                             <blockquote class="text-xl md:text-3xl leading-snug tracking-tight mb-8 font-light">
-                                 "Dr. Santiago changed my life. After years of chronic fatigue, her IV therapy protocol gave me my energy back."
-                             </blockquote>
-                             <div class="flex items-center gap-4">
-                                 <div>
-                                     <div class="font-medium text-lg text-[#D4E8B0]">Verified Patient</div>
-                                     <div class="text-xs uppercase tracking-wider opacity-60 flex items-center gap-1">
-                                        <iconify-icon icon="solar:star-bold" width="12" class="text-[#D4E8B0]"></iconify-icon>
-                                        <iconify-icon icon="solar:star-bold" width="12" class="text-[#D4E8B0]"></iconify-icon>
-                                        <iconify-icon icon="solar:star-bold" width="12" class="text-[#D4E8B0]"></iconify-icon>
-                                        <iconify-icon icon="solar:star-bold" width="12" class="text-[#D4E8B0]"></iconify-icon>
-                                        <iconify-icon icon="solar:star-bold" width="12" class="text-[#D4E8B0]"></iconify-icon>
-                                        <span class="ml-1">Google Review</span>
-                                     </div>
-                                 </div>
-                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slide 2 -->
-                <div class="min-w-[100%] md:min-w-[80%] lg:min-w-[70%] snap-center">
-                    <div class="bg-[#23322b] rounded-3xl p-8 lg:p-12 overflow-hidden">
-                        <div class="flex flex-col justify-center">
-                             <iconify-icon icon="solar:quote-up-bold" width="40" height="40" class="mb-6 opacity-30 text-[#D4E8B0]"></iconify-icon>
-                             <blockquote class="text-xl md:text-3xl leading-snug tracking-tight mb-8 font-light">
-                                 "The most comprehensive approach to wellness I've experienced. She actually listens."
-                             </blockquote>
-                             <div class="flex items-center gap-4">
-                                 <div class="">
-                                     <div class="font-medium text-lg text-[#D4E8B0]">Verified Patient</div>
-                                     <div class="text-xs uppercase tracking-wider opacity-60 flex items-center gap-1">
-                                        <iconify-icon icon="solar:star-bold" width="12" class="text-[#D4E8B0]"></iconify-icon>
-                                        <iconify-icon icon="solar:star-bold" width="12" class="text-[#D4E8B0]"></iconify-icon>
-                                        <iconify-icon icon="solar:star-bold" width="12" class="text-[#D4E8B0]"></iconify-icon>
-                                        <iconify-icon icon="solar:star-bold" width="12" class="text-[#D4E8B0]"></iconify-icon>
-                                        <iconify-icon icon="solar:star-bold" width="12" class="text-[#D4E8B0]"></iconify-icon>
-                                        <span class="ml-1">Google Review</span>
-                                     </div>
-                                 </div>
-                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                 <!-- Slide 3 -->
-                 <div class="min-w-[100%] md:min-w-[80%] lg:min-w-[70%] snap-center">
-                    <div class="bg-[#23322b] rounded-3xl p-8 lg:p-12 overflow-hidden">
-                        <div class="flex flex-col justify-center">
-                             <iconify-icon icon="solar:quote-up-bold" width="40" height="40" class="mb-6 opacity-30 text-[#D4E8B0]"></iconify-icon>
-                             <blockquote class="text-xl md:text-3xl leading-snug tracking-tight mb-8 font-light">
-                                 "I was skeptical about naturopathic medicine but Dr. Santiago's evidence-based approach won me over."
-                             </blockquote>
-                             <div class="flex items-center gap-4">
-                                 <div class="">
-                                     <div class="font-medium text-lg text-[#D4E8B0]">Verified Patient</div>
-                                     <div class="text-xs uppercase tracking-wider opacity-60 flex items-center gap-1">
-                                        <iconify-icon icon="solar:star-bold" width="12" class="text-[#D4E8B0]"></iconify-icon>
-                                        <iconify-icon icon="solar:star-bold" width="12" class="text-[#D4E8B0]"></iconify-icon>
-                                        <iconify-icon icon="solar:star-bold" width="12" class="text-[#D4E8B0]"></iconify-icon>
-                                        <iconify-icon icon="solar:star-bold" width="12" class="text-[#D4E8B0]"></iconify-icon>
-                                        <iconify-icon icon="solar:star-bold" width="12" class="text-[#D4E8B0]"></iconify-icon>
-                                        <span class="ml-1">Google Review</span>
-                                     </div>
-                                 </div>
-                             </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+        <div class="text-center mb-12">
+            <span class="text-xs text-stone-400 uppercase tracking-widest block mb-4">/ 04 Patient Reviews</span>
+            <h2 class="text-3xl md:text-5xl tracking-tight text-stone-900 font-light mb-4">Why patients choose INMC.</h2>
+            <a href="testimonials.html" class="text-sm text-[#2C3E35] font-medium hover:underline inline-flex items-center gap-1">
+                See all reviews <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon>
+            </a>
+        </div>
+        <div class="overflow-hidden relative" style="z-index:1;">
+            <script src="https://static.elfsight.com/platform/platform.js" async></script>
+            <div class="elfsight-app-bcda75e8-99ac-4823-81aa-59029b5d8bd0" data-elfsight-app-lazy></div>
         </div>
     </section>
 
@@ -592,92 +400,219 @@ transform: translateY(110%);
             <div class="lg:col-span-4">
                 <span class="text-xs text-stone-400 uppercase tracking-widest block mb-4">/ 05 FAQ</span>
                 <h2 class="text-4xl md:text-5xl tracking-tight text-stone-900 mb-12 font-light">
-                    Common Questions
+                    Before Your First Visit
                 </h2>
 
-                <div class="mb-12">
-                    <div class="flex justify-between items-end mb-2">
-                        <span class="text-[10px] uppercase font-bold text-stone-400">Available This Week</span>
-                        <span class="text-[10px] font-bold text-stone-400">Limited Spots</span>
-                    </div>
-                    <div class="w-full bg-stone-100 h-1.5 rounded-full overflow-hidden">
-                        <div class="bg-[#2C3E35] w-[75%] h-full"></div>
-                    </div>
-                </div>
-
-                <a href="tel:6267147400" class="bg-stone-900 text-white pl-6 pr-2 py-3 rounded-full flex items-center gap-4 hover:bg-stone-800 transition w-full md:w-auto justify-between md:justify-start">
-                    <span class="text-sm font-medium">Book Free Consultation</span>
+<a href="#contact-form" class="bg-stone-900 text-white pl-6 pr-2 py-3 rounded-full flex items-center gap-4 hover:bg-stone-800 transition w-full md:w-auto justify-between md:justify-start">
+                    <span class="text-sm font-medium">Schedule a 15-Min Discovery Call</span>
                     <div class="bg-white text-black rounded-full p-1.5">
                         <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon>
                     </div>
                 </a>
             </div>
 
-            <div class="lg:col-span-8 space-y-6">
+            <div class="lg:col-span-8 space-y-0">
                 <!-- FAQ Item 1 -->
-                <div class="border-b border-stone-200 pb-6">
-                    <div class="flex justify-between items-center cursor-pointer group">
+                <div class="faq-item border-b border-stone-200 pb-6 mb-6">
+                    <div class="faq-toggle flex justify-between items-center cursor-pointer group" onclick="toggleFaq(this)">
                         <h3 class="text-xl text-stone-500 group-hover:text-stone-900 transition font-light">Do you accept insurance?</h3>
-                        <div class="w-8 h-8 rounded-full border border-stone-200 flex items-center justify-center text-stone-400 group-hover:border-stone-900 group-hover:text-stone-900 transition">
+                        <div class="faq-icon w-8 h-8 rounded-full border border-stone-200 flex items-center justify-center text-stone-400 group-hover:border-stone-900 group-hover:text-stone-900 transition">
                             <iconify-icon icon="solar:add-linear" width="16"></iconify-icon>
                         </div>
+                    </div>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="pt-4 text-sm text-stone-400 leading-relaxed max-w-2xl">
+                            We are an out-of-network provider for most insurance plans. We provide superbills that you can submit to your insurance company for potential reimbursement. Many of our patients receive partial reimbursement through their PPO plans. We accept all major credit cards and offer payment plans for treatment protocols.
+                        </p>
                     </div>
                 </div>
 
                 <!-- FAQ Item 2 -->
-                 <div class="border-b border-stone-200 pb-6">
-                    <div class="flex justify-between items-center cursor-pointer group">
-                        <h3 class="text-xl text-stone-500 group-hover:text-stone-900 transition font-light">What does the initial consultation involve?</h3>
-                        <div class="w-8 h-8 rounded-full border border-stone-200 flex items-center justify-center text-stone-400 group-hover:border-stone-900 group-hover:text-stone-900 transition">
-                            <iconify-icon icon="solar:minus-linear" width="16"></iconify-icon>
+                <div class="faq-item border-b border-stone-200 pb-6 mb-6">
+                    <div class="faq-toggle flex justify-between items-center cursor-pointer group" onclick="toggleFaq(this)">
+                        <h3 class="text-xl text-stone-500 group-hover:text-stone-900 transition font-light">What does the initial visit involve?</h3>
+                        <div class="faq-icon w-8 h-8 rounded-full border border-stone-200 flex items-center justify-center text-stone-400 group-hover:border-stone-900 group-hover:text-stone-900 transition">
+                            <iconify-icon icon="solar:add-linear" width="16"></iconify-icon>
                         </div>
                     </div>
-                    <p class="mt-4 text-sm text-stone-400 leading-relaxed max-w-2xl">
-                        Your first visit includes a thorough review of your health history, current symptoms, and wellness goals. Dr. Santiago takes time to listen and understand the full picture before recommending a personalized treatment protocol.
-                    </p>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="pt-4 text-sm text-stone-400 leading-relaxed max-w-2xl">
+                            Your first visit includes a thorough review of your health history, current symptoms, and wellness goals. Dr. Santiago takes time to listen and understand the full picture before recommending a personalized treatment protocol. Depending on your needs, she may order lab work to identify root causes before beginning any treatment.
+                        </p>
+                    </div>
                 </div>
 
                 <!-- FAQ Item 3 -->
-                <div class="border-b border-stone-200 pb-6">
-                    <div class="flex justify-between items-center cursor-pointer group">
+                <div class="faq-item border-b border-stone-200 pb-6 mb-6">
+                    <div class="faq-toggle flex justify-between items-center cursor-pointer group" onclick="toggleFaq(this)">
                         <h3 class="text-xl text-stone-500 group-hover:text-stone-900 transition font-light">How long does an EBOO session take?</h3>
-                        <div class="w-8 h-8 rounded-full border border-stone-200 flex items-center justify-center text-stone-400 group-hover:border-stone-900 group-hover:text-stone-900 transition">
-                             <iconify-icon icon="solar:add-linear" width="16"></iconify-icon>
+                        <div class="faq-icon w-8 h-8 rounded-full border border-stone-200 flex items-center justify-center text-stone-400 group-hover:border-stone-900 group-hover:text-stone-900 transition">
+                            <iconify-icon icon="solar:add-linear" width="16"></iconify-icon>
                         </div>
+                    </div>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="pt-4 text-sm text-stone-400 leading-relaxed max-w-2xl">
+                            A typical EBOO (Extracorporeal Blood Oxygenation and Ozonation) session takes approximately 45 minutes to one hour. During the treatment, blood is drawn, filtered, oxygenated, ozonated, and returned to the body. Most patients relax comfortably during the session and can resume normal activities afterward.
+                        </p>
                     </div>
                 </div>
 
                 <!-- FAQ Item 4 -->
-                <div class="border-b border-stone-200 pb-6">
-                    <div class="flex justify-between items-center cursor-pointer group">
+                <div class="faq-item border-b border-stone-200 pb-6 mb-6">
+                    <div class="faq-toggle flex justify-between items-center cursor-pointer group" onclick="toggleFaq(this)">
                         <h3 class="text-xl text-stone-500 group-hover:text-stone-900 transition font-light">What conditions do you treat?</h3>
-                        <div class="w-8 h-8 rounded-full border border-stone-200 flex items-center justify-center text-stone-400 group-hover:border-stone-900 group-hover:text-stone-900 transition">
-                             <iconify-icon icon="solar:add-linear" width="16"></iconify-icon>
+                        <div class="faq-icon w-8 h-8 rounded-full border border-stone-200 flex items-center justify-center text-stone-400 group-hover:border-stone-900 group-hover:text-stone-900 transition">
+                            <iconify-icon icon="solar:add-linear" width="16"></iconify-icon>
                         </div>
+                    </div>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="pt-4 text-sm text-stone-400 leading-relaxed max-w-2xl">
+                            Dr. Santiago treats a wide range of conditions including chronic fatigue, autoimmune disorders, Lyme disease, cancer support (complementary to conventional treatment), hormonal imbalances, chronic pain, digestive issues, inflammatory conditions, mold exposure, heavy metal toxicity, and overall wellness optimization. Her approach focuses on identifying and addressing root causes rather than managing symptoms.
+                        </p>
                     </div>
                 </div>
 
                 <!-- FAQ Item 5 -->
-                <div class="border-b border-stone-200 pb-6">
-                    <div class="flex justify-between items-center cursor-pointer group">
-                        <h3 class="text-xl text-stone-500 group-hover:text-stone-900 transition font-light">Is the consultation really free?</h3>
-                        <div class="w-8 h-8 rounded-full border border-stone-200 flex items-center justify-center text-stone-400 group-hover:border-stone-900 group-hover:text-stone-900 transition">
-                             <iconify-icon icon="solar:add-linear" width="16"></iconify-icon>
+                <div class="faq-item border-b border-stone-200 pb-6 mb-6">
+                    <div class="faq-toggle flex justify-between items-center cursor-pointer group" onclick="toggleFaq(this)">
+                        <h3 class="text-xl text-stone-500 group-hover:text-stone-900 transition font-light">What is the 15-minute discovery call?</h3>
+                        <div class="faq-icon w-8 h-8 rounded-full border border-stone-200 flex items-center justify-center text-stone-400 group-hover:border-stone-900 group-hover:text-stone-900 transition">
+                            <iconify-icon icon="solar:add-linear" width="16"></iconify-icon>
                         </div>
+                    </div>
+                    <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="pt-4 text-sm text-stone-400 leading-relaxed max-w-2xl">
+                            It's a brief phone conversation with Dr. Santiago to discuss your health concerns and goals. This helps both you and the doctor determine if her integrative approach is the right fit for your situation. There's no pressure and no commitment — just an honest conversation about whether we can help.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Section 06: Connect -->
+    <section id="connect" class="px-6 py-24 md:px-12 max-w-[1600px] mx-auto">
+        <div class="text-center max-w-xl mx-auto mb-12">
+            <span class="text-xs text-stone-400 uppercase tracking-widest block mb-4">/ 06 Connect</span>
+            <h2 class="text-3xl md:text-4xl tracking-tight text-stone-900 mb-4 font-light">Follow the clinic</h2>
+            <p class="text-sm text-stone-400 leading-relaxed">Health insights, patient stories, and clinic updates from Dr. Santiago.</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="https://www.facebook.com/INMClinic" target="_blank" class="group flex items-center gap-3 bg-white border border-stone-200 px-6 py-4 rounded-2xl hover:border-[#2C3E35] hover:bg-[#2C3E35] transition duration-300">
+                <iconify-icon icon="simple-icons:facebook" width="24" class="text-stone-400 group-hover:text-[#D4E8B0] transition"></iconify-icon>
+                <div class="text-left">
+                    <div class="text-sm font-medium text-stone-900 group-hover:text-white transition">Facebook</div>
+                    <div class="text-xs text-stone-400 group-hover:text-white/60 transition">@INMClinic</div>
+                </div>
+            </a>
+            <a href="https://www.instagram.com/inmc_pasadena" target="_blank" class="group flex items-center gap-3 bg-white border border-stone-200 px-6 py-4 rounded-2xl hover:border-[#2C3E35] hover:bg-[#2C3E35] transition duration-300">
+                <iconify-icon icon="simple-icons:instagram" width="24" class="text-stone-400 group-hover:text-[#D4E8B0] transition"></iconify-icon>
+                <div class="text-left">
+                    <div class="text-sm font-medium text-stone-900 group-hover:text-white transition">Instagram</div>
+                    <div class="text-xs text-stone-400 group-hover:text-white/60 transition">@inmc_pasadena</div>
+                </div>
+            </a>
+            <a href="https://www.yelp.com/biz/integrative-natural-medical-clinic-pasadena" target="_blank" class="group flex items-center gap-3 bg-white border border-stone-200 px-6 py-4 rounded-2xl hover:border-[#2C3E35] hover:bg-[#2C3E35] transition duration-300">
+                <iconify-icon icon="simple-icons:yelp" width="24" class="text-stone-400 group-hover:text-[#D4E8B0] transition"></iconify-icon>
+                <div class="text-left">
+                    <div class="text-sm font-medium text-stone-900 group-hover:text-white transition">Yelp</div>
+                    <div class="text-xs text-stone-400 group-hover:text-white/60 transition">Read Reviews</div>
+                </div>
+            </a>
+            <a href="https://www.google.com/maps/place/Integrative+Natural+Medical+Clinic" target="_blank" class="group flex items-center gap-3 bg-white border border-stone-200 px-6 py-4 rounded-2xl hover:border-[#2C3E35] hover:bg-[#2C3E35] transition duration-300">
+                <iconify-icon icon="simple-icons:google" width="24" class="text-stone-400 group-hover:text-[#D4E8B0] transition"></iconify-icon>
+                <div class="text-left">
+                    <div class="text-sm font-medium text-stone-900 group-hover:text-white transition">Google</div>
+                    <div class="text-xs text-stone-400 group-hover:text-white/60 transition">4.5 ★ Reviews</div>
+                </div>
+            </a>
+        </div>
+    </section>
+
     <!-- Footer -->
+    <!-- Section 07: Contact Form -->
+    <section id="contact-form" class="px-6 py-24 md:px-12 max-w-[1600px] mx-auto border-t border-stone-200">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            <div>
+                <span class="text-xs text-stone-400 uppercase tracking-widest block mb-4">/ 07 Get In Touch</span>
+                <h2 class="text-4xl md:text-5xl tracking-tight text-stone-900 mb-6 font-light">Start a conversation</h2>
+                <p class="text-stone-500 text-base leading-relaxed mb-8">Tell us what you're dealing with. Our team personally reviews every inquiry and responds within one business day.</p>
+                <div class="space-y-4 text-sm text-stone-500">
+                    <div class="flex items-center gap-3">
+                        <iconify-icon icon="solar:phone-linear" width="18" class="text-[#2C3E35]"></iconify-icon>
+                        <a href="tel:6267147400" class="hover:text-stone-900 transition">(626) 714-7400</a>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <iconify-icon icon="solar:letter-linear" width="18" class="text-[#2C3E35]"></iconify-icon>
+                        <a href="mailto:info@dramaliyasantiago.com" class="hover:text-stone-900 transition">info@dramaliyasantiago.com</a>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <iconify-icon icon="solar:map-point-linear" width="18" class="text-[#2C3E35]"></iconify-icon>
+                        <span>301 S Fair Oaks Ave #401, Pasadena, CA 91105</span>
+                    </div>
+                </div>
+            </div>
+            <form id="contactForm" class="space-y-5" onsubmit="handleContactSubmit(event)">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="text-xs text-stone-500 uppercase tracking-wider block mb-2">First Name *</label>
+                        <input type="text" name="firstName" required class="w-full px-4 py-3 rounded-xl border border-stone-200 bg-white text-stone-900 text-sm focus:outline-none focus:border-[#2C3E35] transition">
+                    </div>
+                    <div>
+                        <label class="text-xs text-stone-500 uppercase tracking-wider block mb-2">Last Name *</label>
+                        <input type="text" name="lastName" required class="w-full px-4 py-3 rounded-xl border border-stone-200 bg-white text-stone-900 text-sm focus:outline-none focus:border-[#2C3E35] transition">
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label class="text-xs text-stone-500 uppercase tracking-wider block mb-2">Email *</label>
+                        <input type="email" name="email" required class="w-full px-4 py-3 rounded-xl border border-stone-200 bg-white text-stone-900 text-sm focus:outline-none focus:border-[#2C3E35] transition">
+                    </div>
+                    <div>
+                        <label class="text-xs text-stone-500 uppercase tracking-wider block mb-2">Phone</label>
+                        <input type="tel" name="phone" class="w-full px-4 py-3 rounded-xl border border-stone-200 bg-white text-stone-900 text-sm focus:outline-none focus:border-[#2C3E35] transition">
+                    </div>
+                </div>
+                <div>
+                    <label class="text-xs text-stone-500 uppercase tracking-wider block mb-2">What can we help you with?</label>
+                    <select name="interest" class="w-full px-4 py-3 rounded-xl border border-stone-200 bg-white text-stone-900 text-sm focus:outline-none focus:border-[#2C3E35] transition">
+                        <option value="">Select a topic...</option>
+                        <option value="15-Minute Discovery Call">15-Minute Discovery Call</option>
+                        <option value="EBOO Ozone Therapy">EBOO Ozone Therapy</option>
+                        <option value="IV Nutrition Therapy">IV Nutrition Therapy</option>
+                        <option value="Hormones & Anti-Aging">Hormones & Anti-Aging</option>
+                        <option value="Exosomes & PRP">Exosomes & PRP</option>
+                        <option value="Natural Oncology">Natural Oncology</option>
+                        <option value="Peptide Therapy">Peptide Therapy</option>
+                        <option value="Medical Weight Loss">Medical Weight Loss</option>
+                        <option value="Pain Management">Pain Management</option>
+                        <option value="Other / General Question">Other / General Question</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="text-xs text-stone-500 uppercase tracking-wider block mb-2">Message *</label>
+                    <textarea name="message" rows="4" required class="w-full px-4 py-3 rounded-xl border border-stone-200 bg-white text-stone-900 text-sm focus:outline-none focus:border-[#2C3E35] transition resize-none"></textarea>
+                </div>
+                <button type="submit" id="contactSubmitBtn" class="bg-[#2C3E35] text-white pl-6 pr-3 py-3 rounded-full flex items-center gap-3 hover:bg-stone-800 transition text-sm font-medium">
+                    Send Message
+                    <div class="bg-[#D4E8B0] text-[#2C3E35] rounded-full p-1.5">
+                        <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon>
+                    </div>
+                </button>
+                <div id="contactSuccess" class="hidden bg-[#D4E8B0]/20 border border-[#2C3E35]/20 rounded-xl p-4 text-sm text-[#2C3E35]">
+                    Thank you for reaching out! Our team will get back to you within one business day.
+                </div>
+            </form>
+        </div>
+    </section>
+
     <footer id="contact" class="bg-[#2C3E35] text-white px-6 py-24 md:px-12">
         <div class="max-w-[1600px] mx-auto grid grid-cols-1 lg:grid-cols-4 gap-12 lg:gap-24">
 
             <div class="lg:col-span-1">
-                <h2 class="text-2xl tracking-tight mb-8 font-light">Your journey to root-cause healing starts here.</h2>
-                <a href="tel:6267147400" class="bg-[#D4E8B0] text-[#2C3E35] pl-6 pr-2 py-2 rounded-full flex items-center gap-4 hover:bg-white transition w-max">
-                    <span class="text-sm font-medium">Book Free Consultation</span>
+                <h2 class="text-2xl tracking-tight mb-8 font-light">Root-cause medicine. By appointment only.</h2>
+                <a href="#contact-form" class="bg-[#D4E8B0] text-[#2C3E35] pl-6 pr-2 py-2 rounded-full flex items-center gap-4 hover:bg-white transition w-max">
+                    <span class="text-sm font-medium">Schedule a 15-Min Discovery Call</span>
                     <div class="bg-[#2C3E35] text-[#D4E8B0] rounded-full p-1.5">
                         <iconify-icon icon="solar:arrow-right-linear" width="16"></iconify-icon>
                     </div>
@@ -714,14 +649,14 @@ transform: translateY(110%);
                     <div class="pt-8">
                         <span class="block mb-4 text-[#D4E8B0]">Connect</span>
                         <div class="flex gap-2">
-                             <a href="#" class="w-8 h-8 flex items-center justify-center rounded border border-[#D4E8B0]/20 text-white hover:bg-[#D4E8B0] hover:text-[#2C3E35] transition">
+                             <a href="https://www.instagram.com/inmc_pasadena" target="_blank" class="w-8 h-8 flex items-center justify-center rounded border border-[#D4E8B0]/20 text-white hover:bg-[#D4E8B0] hover:text-[#2C3E35] transition">
                                  <iconify-icon icon="simple-icons:instagram"></iconify-icon>
                              </a>
-                             <a href="#" class="w-8 h-8 flex items-center justify-center rounded border border-[#D4E8B0]/20 text-white hover:bg-[#D4E8B0] hover:text-[#2C3E35] transition">
+                             <a href="https://www.facebook.com/INMClinic" target="_blank" class="w-8 h-8 flex items-center justify-center rounded border border-[#D4E8B0]/20 text-white hover:bg-[#D4E8B0] hover:text-[#2C3E35] transition">
                                 <iconify-icon icon="simple-icons:facebook"></iconify-icon>
                              </a>
-                             <a href="#" class="w-8 h-8 flex items-center justify-center rounded border border-[#D4E8B0]/20 text-white hover:bg-[#D4E8B0] hover:text-[#2C3E35] transition">
-                                <iconify-icon icon="simple-icons:google"></iconify-icon>
+                             <a href="https://www.yelp.com/biz/integrative-natural-medical-clinic-pasadena" target="_blank" class="w-8 h-8 flex items-center justify-center rounded border border-[#D4E8B0]/20 text-white hover:bg-[#D4E8B0] hover:text-[#2C3E35] transition">
+                                <iconify-icon icon="simple-icons:yelp"></iconify-icon>
                              </a>
                         </div>
                     </div>
@@ -732,8 +667,9 @@ transform: translateY(110%);
         <div class="max-w-[1600px] mx-auto mt-24 pt-8 border-t border-[#D4E8B0]/20 flex flex-col md:flex-row justify-between text-[10px] text-[#D4E8B0]/60 tracking-wider uppercase">
             <div class="flex gap-6 mb-4 md:mb-0">
                 <a href="#services" class="hover:text-white transition">Services</a>
-                <a href="#about" class="hover:text-white transition">About</a>
-                <a href="#testimonials" class="hover:text-white transition">Testimonials</a>
+                <a href="about.html" class="hover:text-white transition">About</a>
+                <a href="testimonials.html" class="hover:text-white transition">Testimonials</a>
+                <a href="blog.html" class="hover:text-white transition">Blog</a>
             </div>
             <div class="flex gap-6">
                 <span>&copy; 2026 Integrative Natural Medical Center</span>
@@ -752,7 +688,6 @@ transform: translateY(110%);
             const text = element.textContent.trim();
             const words = text.split(' ');
             element.textContent = '';
-
             words.forEach(word => {
                 const wrapper = document.createElement('span');
                 wrapper.classList.add('word-wrapper');
@@ -764,49 +699,138 @@ transform: translateY(110%);
             });
         }
 
-        const revealElements = document.querySelectorAll('.reveal-text');
-
-        revealElements.forEach(element => {
+        document.querySelectorAll('.reveal-text').forEach(element => {
             splitTextForReveal(element);
-            const innerWords = element.querySelectorAll('.word-inner');
-
-            gsap.to(innerWords, {
-                y: 0,
-                duration: 1.2,
-                stagger: 0.05,
-                ease: "power4.out",
-                scrollTrigger: {
-                    trigger: element,
-                    start: "top 85%",
-                    toggleActions: "play none none reverse"
-                }
+            gsap.to(element.querySelectorAll('.word-inner'), {
+                y: 0, duration: 1.2, stagger: 0.05, ease: "power4.out",
+                scrollTrigger: { trigger: element, start: "top 85%", toggleActions: "play none none reverse" }
             });
         });
 
         gsap.to("#hero-bg", {
-            yPercent: 30,
-            ease: "none",
-            scrollTrigger: {
-                trigger: "#hero-section",
-                start: "top top",
-                end: "bottom top",
-                scrub: true
-            }
+            yPercent: 30, ease: "none",
+            scrollTrigger: { trigger: "#hero-section", start: "top top", end: "bottom top", scrub: true }
         });
 
-        // SLIDER LOGIC
-        const container = document.getElementById('testimonial-container');
-        const prevBtn = document.getElementById('prevBtn');
-        const nextBtn = document.getElementById('nextBtn');
+        // SERVICES GRID — interactive cards with images
+        const services = [
+            { title: "EBOO Ozone Therapy", desc: "Deep blood filtration that removes toxins your liver can't. A 45-minute to 1-hour session that filters, oxygenates, and ozonates your blood — our most requested protocol for patients with chronic illness who've tried everything else.", img: "images/services/eboo.png", icon: "solar:health-linear" },
+            { title: "IV Nutrition Therapy", desc: "16 precision IV formulas — each built from your bloodwork. Myers' Cocktail, High-Dose Vitamin C, NAD+, glutathione, and chelation therapy. Not off-the-shelf drips. Protocols matched to your labs.", img: "images/services/iv-therapy.png", icon: "solar:dropper-linear" },
+            { title: "Hormones & Anti-Aging", desc: "Restore the energy, clarity, and drive that disappeared with age. Bioidentical hormone replacement therapy guided by comprehensive lab panels — personalized protocols for metabolism, mood, and long-term vitality.", img: "images/services/hormones.png", icon: "solar:heart-pulse-linear" },
+            { title: "Exosomes & PRP", desc: "Your body's own repair system, amplified. Platelet-rich plasma and exosome therapy for joint repair, tissue regeneration, and anti-aging. Regenerative medicine that works with your biology, not against it.", img: "images/services/exosomes.png", icon: "solar:atom-linear" },
+            { title: "Natural Oncology", desc: "Make your body inhospitable to cancer. Complementary protocols designed to work alongside your conventional treatment — boosting immunity, reducing inflammation, and supporting your body's ability to fight back.", img: "images/services/oncology.png", icon: "solar:shield-check-linear" },
+            { title: "Hyperthermia Ozone Sauna", desc: "Force your body to release what it's been holding onto for years. Medical-grade ozone combined with therapeutic heat activates deep detoxification pathways, immune response, and systemic circulation.", img: "images/services/sauna.png", icon: "solar:fire-linear" },
+            { title: "Ozone High Dose Therapy", desc: "Flood your cells with the oxygen they've been starved of. Systemic ozone protocols for deep immune modulation, pathogen elimination, and cellular recovery — used for chronic infections and autoimmune conditions.", img: "images/services/ozone-therapy.png", icon: "solar:wind-linear" },
+            { title: "Plexr Plasma", desc: "Surgical-grade skin tightening. No surgery. Plasma energy targets fine lines, skin laxity, and scarring with precision — no incisions, no downtime, no general anesthesia.", img: "images/services/plexr.png", icon: "solar:magic-stick-linear" },
+            { title: "Prolozone Therapy", desc: "Joints that hurt less after one session than they have in years. Ozone and nutrient injections directly into damaged joints, ligaments, and tendons — stimulating repair without surgery or pharmaceuticals.", img: "images/services/prolozone.png", icon: "solar:bone-linear" },
+            { title: "PEMF Therapy", desc: "Cellular repair at the electromagnetic level. Pulsed electromagnetic fields stimulate bone healing, reduce inflammation, improve circulation, and accelerate recovery — backed by decades of clinical research.", img: "images/services/pemf.png", icon: "solar:magnet-linear" },
+            { title: "RoXiva Light Therapy", desc: "Train your brain to relax on command. Precisely calibrated light frequencies guide your brainwave patterns into states of deep relaxation, enhanced focus, and restorative sleep.", img: "images/services/roxiva.png", icon: "solar:sun-linear" },
+            { title: "Peptide Therapy", desc: "Targeted peptide protocols that signal your body to heal, build, and recover. Custom-compounded peptides for tissue repair, immune function, gut health, cognitive performance, and anti-aging — matched to your labs and goals.", img: "images/services/hormones.png", icon: "solar:molecule-linear" },
+            { title: "Medical Weight Loss", desc: "Lose weight by fixing the biology behind it. Physician-guided protocols that address hormones, metabolism, inflammation, and gut health — not crash diets. Sustainable results built on lab work and personalized treatment plans.", img: "images/services/iv-therapy.png", icon: "solar:scale-linear" },
+            { title: "Pain Management", desc: "Resolve chronic pain at the source instead of masking it with medication. Prolozone injections, PEMF therapy, IV protocols, and targeted anti-inflammatory strategies — designed to restore function and eliminate dependency on painkillers.", img: "images/services/prolozone.png", icon: "solar:bandage-linear" }
+        ];
 
-        if(container && nextBtn && prevBtn) {
-            nextBtn.addEventListener('click', () => {
-                container.scrollBy({ left: container.clientWidth * 0.7, behavior: 'smooth' });
-            });
-            prevBtn.addEventListener('click', () => {
-                container.scrollBy({ left: -(container.clientWidth * 0.7), behavior: 'smooth' });
-            });
+        const grid = document.getElementById('services-grid');
+        grid.innerHTML = services.map((s, i) => `
+            <div class="service-card group relative rounded-2xl overflow-hidden cursor-pointer border border-stone-200 hover:border-[#2C3E35] transition-all duration-300 hover:shadow-lg" onclick="openService(${i})">
+                <div class="h-48 overflow-hidden">
+                    <img src="${s.img}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="${s.title}" loading="lazy">
+                </div>
+                <div class="p-5 bg-white">
+                    <div class="flex items-center gap-3 mb-2">
+                        <div class="w-7 h-7 rounded-full bg-[#2C3E35]/10 flex items-center justify-center shrink-0">
+                            <iconify-icon icon="${s.icon}" width="14" class="text-[#2C3E35]"></iconify-icon>
+                        </div>
+                        <span class="text-[10px] text-stone-400 font-mono">${String(i+1).padStart(2,'0')}</span>
+                    </div>
+                    <h3 class="text-lg font-medium tracking-tight text-stone-900 group-hover:text-[#2C3E35] transition">${s.title}</h3>
+                    <p class="text-xs text-stone-400 mt-1 line-clamp-2">${s.desc.split('.')[0]}.</p>
+                    <div class="mt-3 flex items-center gap-1 text-xs font-medium text-[#2C3E35] opacity-0 group-hover:opacity-100 transition">
+                        <span>Learn more</span>
+                        <iconify-icon icon="solar:arrow-right-linear" width="12"></iconify-icon>
+                    </div>
+                </div>
+            </div>
+        `).join('');
+
+        function openService(idx) {
+            const s = services[idx];
+            const panel = document.getElementById('service-detail');
+            document.getElementById('service-detail-img').src = s.img;
+            document.getElementById('service-detail-img').alt = s.title;
+            document.getElementById('service-detail-num').textContent = `Service ${String(idx+1).padStart(2,'0')} of 11`;
+            document.getElementById('service-detail-title').textContent = s.title;
+            document.getElementById('service-detail-desc').textContent = s.desc;
+            panel.classList.remove('hidden');
+            panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        // CONTACT FORM
+        async function handleContactSubmit(e) {
+            e.preventDefault();
+            const form = document.getElementById('contactForm');
+            const btn = document.getElementById('contactSubmitBtn');
+            const success = document.getElementById('contactSuccess');
+            const origBtnHTML = btn.innerHTML;
+            btn.innerHTML = '<span>Sending...</span>';
+            btn.disabled = true;
+
+            const data = new FormData(form);
+            const payload = {
+                firstName: data.get('firstName'),
+                lastName: data.get('lastName'),
+                email: data.get('email'),
+                phone: data.get('phone'),
+                interest: data.get('interest'),
+                message: data.get('message')
+            };
+
+            try {
+                const res = await fetch('/api/contact', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!res.ok) throw new Error('Server error');
+
+                form.reset();
+                success.classList.remove('hidden');
+                setTimeout(() => success.classList.add('hidden'), 8000);
+            } catch (err) {
+                // Fallback: open mailto if API fails
+                const subject = encodeURIComponent('Website Inquiry: ' + (payload.interest || 'General'));
+                const body = encodeURIComponent(
+                    'Name: ' + payload.firstName + ' ' + (payload.lastName || '') + '\n' +
+                    'Email: ' + payload.email + '\n' +
+                    'Phone: ' + (payload.phone || 'Not provided') + '\n\n' +
+                    'Message:\n' + (payload.message || '')
+                );
+                window.open('mailto:info@dramaliyasantiago.com?subject=' + subject + '&body=' + body, '_blank');
+            } finally {
+                btn.innerHTML = origBtnHTML;
+                btn.disabled = false;
+            }
+        }
+
+        // FAQ ACCORDION
+        function toggleFaq(toggle) {
+            const item = toggle.closest('.faq-item');
+            const answer = item.querySelector('.faq-answer');
+            const icon = item.querySelector('.faq-icon iconify-icon');
+            const isOpen = answer.style.maxHeight && answer.style.maxHeight !== '0px';
+
+            // Close all
+            document.querySelectorAll('.faq-answer').forEach(a => a.style.maxHeight = '0px');
+            document.querySelectorAll('.faq-icon iconify-icon').forEach(i => i.setAttribute('icon', 'solar:add-linear'));
+
+            if (!isOpen) {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                icon.setAttribute('icon', 'solar:minus-linear');
+            }
         }
     </script>
 
+<!-- GHL Chat Widget -->
+<script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="69cc91e086ec4f5dc6900723"></script>
 </body></html>

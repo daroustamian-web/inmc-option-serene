@@ -1,0 +1,16 @@
+{
+  "action": "created",
+  "board": "PERSONAL BOARD",
+  "boardUrl": "https://trello.com/b/D7sMtSiV/personal-board",
+  "list": "Client Work",
+  "cardName": "INMC chatbot setup blocker - needs GHL widget scope",
+  "cardUrl": "https://trello.com/c/EjuJgd8T/88-inmc-chatbot-setup-blocker-needs-ghl-widget-scope",
+  "attached": [
+    "INMC_CHATBOT_AUDIT_2026-06-02.md",
+    "INMC_CHATBOT_REPAIR_SPEC_2026-06-02.md",
+    "INMC_CHATBOT_TOKEN_SCOPE_REQUEST.md",
+    "inmc-ghl-scope-probe-20260602T191850214460Z.json"
+  ],
+  "beforeSnapshot": "/Users/danielaroustamian/inmc-option-1/reports/trello-personal-board-before-inmc-chatbot-20260604T185134384544Z.json",
+  "afterSnapshot": "/Users/danielaroustamian/inmc-option-1/reports/trello-personal-board-after-inmc-chatbot-20260604T185134384544Z.json"
+}

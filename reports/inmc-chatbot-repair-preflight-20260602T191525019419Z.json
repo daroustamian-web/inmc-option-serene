@@ -1,0 +1,85 @@
+{
+  "timestamp": "2026-06-02T19:15:23.412482+00:00",
+  "mode": "dry-run",
+  "safeToApply": false,
+  "blockers": [
+    "Current INMC PIT lacks private chat-widget scope; cannot safely update or attach widget.",
+    "Widget cannot be updated with current token, so live apply is blocked."
+  ],
+  "plannedActions": [
+    {
+      "target": "chat-widget",
+      "widgetId": "69cc91e086ec4f5dc6900723",
+      "changes": {
+        "agency-name": "Integrative Natural Medical Clinic",
+        "show-agency-branding": false,
+        "live-chat-ack-msg": "Your chat has ended.",
+        "attach_ai_agent": "INMC Website Concierge"
+      },
+      "canApplyWithCurrentToken": false
+    },
+    {
+      "target": "agent-studio-version",
+      "agentId": "df35e393-0714-4603-8999-bbc80784aac4",
+      "versionId": "de7b59b9-5313-4589-93d3-ee9c40212ad5",
+      "changes": [
+        "enable chat trigger",
+        "replace generic B2B prompt with INMC concierge prompt",
+        "replace empty runtime variable key set",
+        "allow human fallback"
+      ],
+      "canApplyWithCurrentToken": true
+    },
+    {
+      "target": "pipeline",
+      "pipelineId": "rjCeIQeulTJy5B8laSfm",
+      "currentStages": [
+        "New Lead",
+        "Contacted",
+        "Proposal Sent",
+        "Closed"
+      ],
+      "targetStages": [
+        "New Lead",
+        "Needs Reply",
+        "Discovery Call Requested",
+        "Consultation Scheduled",
+        "Active Patient",
+        "Not A Fit"
+      ],
+      "canApplyWithCurrentToken": false,
+      "reason": "Pipeline stage update endpoint was not exercised; keep as UI/manual or separate scoped script."
+    }
+  ],
+  "privateWidgetScope": {
+    "status": 401,
+    "error": "The token is not authorized for this scope."
+  },
+  "currentWidget": {
+    "chat_type": "allInOneChat",
+    "chat_types": "[\"liveChat\",\"emailChat\"]",
+    "agency_name": "Care Connect",
+    "show_agency_branding": true,
+    "ack_message": "Your chat has ende",
+    "location_id": "x8il6XPJdeSXlgJFFiCJ"
+  },
+  "agentPatchPreview": {
+    "agentId": "df35e393-0714-4603-8999-bbc80784aac4",
+    "versionId": "de7b59b9-5313-4589-93d3-ee9c40212ad5",
+    "newVersionName": "INMC Website Concierge v1",
+    "nodeCount": 17,
+    "runtimeVariableKeys": [
+      "visitorName",
+      "visitorPhone",
+      "visitorEmail",
+      "mainConcern",
+      "serviceInterest",
+      "timeline",
+      "leadQuality",
+      "handoffReason",
+      "conversationSummary"
+    ],
+    "promptContainsINMC": true,
+    "chatTriggerWillBeEnabled": true
+  }
+}

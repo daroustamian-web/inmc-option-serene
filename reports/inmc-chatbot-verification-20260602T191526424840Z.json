@@ -1,0 +1,155 @@
+{
+  "timestamp": "2026-06-02T19:15:26.424588+00:00",
+  "ok": false,
+  "checks": [
+    {
+      "name": "env has INMC token and location",
+      "ok": true,
+      "details": {
+        "has_token": true,
+        "token_length": 40,
+        "location_id": "x8il6XPJdeSXlgJFFiCJ"
+      }
+    },
+    {
+      "name": "live pages embed expected widget",
+      "ok": true,
+      "details": {
+        "pages": [
+          {
+            "route": "/",
+            "status": 200,
+            "widget_present": true,
+            "loader_present": true
+          },
+          {
+            "route": "/about.html",
+            "status": 200,
+            "widget_present": true,
+            "loader_present": true
+          },
+          {
+            "route": "/testimonials.html",
+            "status": 200,
+            "widget_present": true,
+            "loader_present": true
+          },
+          {
+            "route": "/blog.html",
+            "status": 200,
+            "widget_present": true,
+            "loader_present": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "GHL location is INMC",
+      "ok": true,
+      "details": {
+        "status": 200,
+        "name": "Integrative Natural Medical Center"
+      }
+    },
+    {
+      "name": "public widget config belongs to INMC",
+      "ok": true,
+      "details": {
+        "status": 200,
+        "location_id": "x8il6XPJdeSXlgJFFiCJ"
+      }
+    },
+    {
+      "name": "widget is AI capable",
+      "ok": true,
+      "details": {
+        "chat_type": "allInOneChat",
+        "chat_types": [
+          "liveChat",
+          "emailChat"
+        ]
+      }
+    },
+    {
+      "name": "widget branding is INMC or disabled",
+      "ok": false,
+      "details": {
+        "show_agency_branding": true,
+        "agency_name": "Care Connect"
+      }
+    },
+    {
+      "name": "widget acknowledgement copy is clean",
+      "ok": false,
+      "details": {
+        "live_chat_ack_msg": "Your chat has ende"
+      }
+    },
+    {
+      "name": "token has private chat widget scope",
+      "ok": false,
+      "details": {
+        "status": 401,
+        "error": "The token is not authorized for this scope."
+      }
+    },
+    {
+      "name": "Agent Studio production agent exists",
+      "ok": true,
+      "details": {
+        "status": 200,
+        "agent_name": "Lead Qualification Agent",
+        "agent_status": "active",
+        "prod_version_id": "de7b59b9-5313-4589-93d3-ee9c40212ad5",
+        "prod_is_published": true
+      }
+    },
+    {
+      "name": "production chat trigger enabled",
+      "ok": false,
+      "details": {
+        "triggers": [
+          {
+            "nodeId": "14a173a7-bab5-46f6-82eb-9a85b297595f",
+            "display": "Chat message",
+            "type": "chat",
+            "enabled": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "production prompt is INMC specific",
+      "ok": false,
+      "details": {
+        "prompt_count": 8,
+        "has_company_word": true
+      }
+    },
+    {
+      "name": "runtime variable keys are non empty",
+      "ok": false,
+      "details": {
+        "runtime_keys": [
+          "leadQuality",
+          "",
+          ""
+        ]
+      }
+    },
+    {
+      "name": "Website Leads pipeline uses clinic intake stages",
+      "ok": false,
+      "details": {
+        "status": 200,
+        "pipeline_id": "rjCeIQeulTJy5B8laSfm",
+        "current_stages": [
+          "New Lead",
+          "Contacted",
+          "Proposal Sent",
+          "Closed"
+        ]
+      }
+    }
+  ]
+}

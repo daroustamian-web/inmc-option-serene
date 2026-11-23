@@ -71,6 +71,7 @@ transform: translateY(110%);
         </a>
         <div class="hidden md:flex items-center gap-8 text-sm font-medium tracking-tight text-stone-700">
             <a href="#services" class="hover:text-[#2C3E35] transition">Services</a>
+            <a href="hbot.html" class="hover:text-[#2C3E35] transition">HBOT</a>
             <a href="about.html" class="hover:text-[#2C3E35] transition">About</a>
             <a href="testimonials.html" class="hover:text-[#2C3E35] transition">Testimonials</a>
             <a href="blog.html" class="hover:text-[#2C3E35] transition">Blog</a>
@@ -90,6 +91,7 @@ transform: translateY(110%);
     <div id="mobile-menu" class="hidden fixed top-[65px] left-0 right-0 z-40 bg-white border-b border-stone-200 shadow-lg md:hidden">
         <div class="flex flex-col px-6 py-4 gap-1">
             <a href="#services" onclick="document.getElementById('mobile-menu').classList.add('hidden')" class="py-3 text-stone-700 font-medium hover:text-[#2C3E35] transition border-b border-stone-100">Services</a>
+            <a href="hbot.html" class="py-3 text-stone-700 font-medium hover:text-[#2C3E35] transition border-b border-stone-100">HBOT</a>
             <a href="about.html" class="py-3 text-stone-700 font-medium hover:text-[#2C3E35] transition border-b border-stone-100">About</a>
             <a href="testimonials.html" class="py-3 text-stone-700 font-medium hover:text-[#2C3E35] transition border-b border-stone-100">Testimonials</a>
             <a href="blog.html" class="py-3 text-stone-700 font-medium hover:text-[#2C3E35] transition border-b border-stone-100">Blog</a>
@@ -362,8 +364,8 @@ transform: translateY(110%);
                     <h3 id="service-detail-title" class="text-3xl lg:text-4xl tracking-tight font-light mb-4"></h3>
                     <p id="service-detail-desc" class="text-white/70 text-base leading-relaxed mb-8"></p>
                     <div class="flex items-center gap-4">
-                        <a href="#contact-form" class="bg-[#D4E8B0] text-[#2C3E35] pl-5 pr-2 py-2.5 rounded-full inline-flex items-center gap-2 text-sm font-medium hover:bg-white transition" onclick="document.getElementById('service-detail').classList.add('hidden')">
-                            Book This Treatment
+                        <a id="service-detail-cta" href="#contact-form" class="bg-[#D4E8B0] text-[#2C3E35] pl-5 pr-2 py-2.5 rounded-full inline-flex items-center gap-2 text-sm font-medium hover:bg-white transition" onclick="document.getElementById('service-detail').classList.add('hidden')">
+                            <span>Book This Treatment</span>
                             <div class="bg-[#2C3E35] text-[#D4E8B0] rounded-full p-1">
                                 <iconify-icon icon="solar:arrow-right-linear" width="14"></iconify-icon>
                             </div>
@@ -586,6 +588,8 @@ transform: translateY(110%);
                         <option value="Peptide Therapy">Peptide Therapy</option>
                         <option value="Medical Weight Loss">Medical Weight Loss</option>
                         <option value="Pain Management">Pain Management</option>
+                        <option value="Hyperbaric Oxygen Therapy (HBOT)">Hyperbaric Oxygen Therapy (HBOT)</option>
+                        <option value="Anxious Insomnia Formula">Anxious Insomnia Formula</option>
                         <option value="Other / General Question">Other / General Question</option>
                     </select>
                 </div>
@@ -727,6 +731,8 @@ transform: translateY(110%);
             { title: "RoXiva Light Therapy", desc: "Train your brain to relax on command. Precisely calibrated light frequencies guide your brainwave patterns into states of deep relaxation, enhanced focus, and restorative sleep.", img: "images/services/roxiva.png", icon: "solar:sun-linear" },
             { title: "Peptide Therapy", desc: "Targeted peptide protocols that signal your body to heal, build, and recover. Custom-compounded peptides for tissue repair, immune function, gut health, cognitive performance, and anti-aging — matched to your labs and goals.", img: "images/services/hormones.png", icon: "solar:molecule-linear" },
             { title: "Medical Weight Loss", desc: "Lose weight by fixing the biology behind it. Physician-guided protocols that address hormones, metabolism, inflammation, and gut health — not crash diets. Sustainable results built on lab work and personalized treatment plans.", img: "images/services/iv-therapy.png", icon: "solar:scale-linear" },
+            { title: "Hyperbaric Oxygen Therapy", desc: "Breathe concentrated oxygen inside a pressurized chamber, so more oxygen reaches your tissues. $90 per session. Dr. Santiago recommends two sessions a week, and once a week is also available.", img: "images/services/hbot.svg", icon: "solar:wind-linear", link: "hbot.html", cta: "See HBOT pricing" },
+            { title: "Anxious Insomnia Formula", desc: "INMC's own sleep formula. Calming botanicals (skullcap, valerian, passionflower, lemon balm, hops), 5-HTP, L-glycine, PharmaGABA, magnesium, and B vitamins in 90 vegetarian capsules. It is made to support relaxation, a balanced mood, and restful sleep. Ask our office to order. These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure, or prevent any disease.", img: "images/services/anxious-insomnia.jpg", icon: "solar:moon-sleep-linear", cta: "Ask about the formula", interest: "Anxious Insomnia Formula" },
             { title: "Pain Management", desc: "Resolve chronic pain at the source instead of masking it with medication. Prolozone injections, PEMF therapy, IV protocols, and targeted anti-inflammatory strategies — designed to restore function and eliminate dependency on painkillers.", img: "images/services/prolozone.png", icon: "solar:bandage-linear" }
         ];
 
@@ -758,12 +764,30 @@ transform: translateY(110%);
             const panel = document.getElementById('service-detail');
             document.getElementById('service-detail-img').src = s.img;
             document.getElementById('service-detail-img').alt = s.title;
-            document.getElementById('service-detail-num').textContent = `Service ${String(idx+1).padStart(2,'0')} of 11`;
+            document.getElementById('service-detail-num').textContent = `Service ${String(idx+1).padStart(2,'0')} of ${services.length}`;
+            const cta = document.getElementById('service-detail-cta');
+            if (cta) {
+                cta.href = s.link || '#contact-form';
+                cta.querySelector('span').textContent = s.cta || 'Book This Treatment';
+                const sel = document.querySelector('#contactForm select[name="interest"]');
+                const want = s.interest || s.title;
+                if (!s.link && sel && [...sel.options].some(o => o.value === want)) sel.value = want;
+            }
             document.getElementById('service-detail-title').textContent = s.title;
             document.getElementById('service-detail-desc').textContent = s.desc;
             panel.classList.remove('hidden');
             panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
+
+        // Preselect the form topic from ?interest= (used by hbot.html and ads)
+        (function () {
+            const want = new URLSearchParams(location.search).get('interest');
+            const sel = document.querySelector('#contactForm select[name="interest"]');
+            if (!want || !sel) return;
+            const map = { hbot: 'Hyperbaric Oxygen Therapy (HBOT)', sleep: 'Anxious Insomnia Formula' };
+            const v = map[want.toLowerCase()] || want;
+            if ([...sel.options].some(o => o.value === v)) sel.value = v;
+        })();
 
         // CONTACT FORM
         async function handleContactSubmit(e) {
